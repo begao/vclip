@@ -188,7 +188,7 @@ $(function() {
   });
 
   var getLink = window.location.href.substr().split("/");
-  if ( getLink[3]+'/'+getLink[4] == "admin/newpost" || getLink[3]+'/'+getLink[4] == "article/add") {
+  if ( getLink[3]+'/'+getLink[4] == "admin/newpost" || getLink[3]+'/'+getLink[4] == "article/add" || getLink[3]+'/'+getLink[4] == "admin/article") {
     CKEDITOR.replace('add-content');
   } else if ( getLink[3]+'/'+getLink[4] =="admin/postid" || getLink[3]+'/'+getLink[4] == "article/edit") {
     CKEDITOR.replace('edit-content');

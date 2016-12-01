@@ -64,11 +64,11 @@ module.exports.connections = {
   },
   someMysqlServer1: {
     adapter: 'sails-mysql',
-    host: 'localhost',
+    host: 'vnmagic.net',
     port: 3306,
     user: 'root', //optional
-    password: 'pass', //optional
-    database: 'database1' //optional
+    password: 'Diablo321', //optional
+    database: 'vnmagict' //optional
   }
 
   /***************************************************************************

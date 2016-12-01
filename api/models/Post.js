@@ -46,6 +46,10 @@ module.exports = {
     featured: {
       type: 'integer'
     },
+    status:{
+      type:'integer',
+      defaultsTo: 1
+    },
     cid: {
       model: 'category'
     },

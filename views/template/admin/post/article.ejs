@@ -5,30 +5,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"><i class="fa fa-plus"></i> ADD NEW POST</h4>
+        <h4 class="modal-title"><i class="fa fa-plus"></i> ADD NEW ARTICLE</h4>
       </div>
       <div class="modal-body">
         <form class="form-horizontal" id="add-post-form">
           <div class="form-group">
             <div class="col-sm-6">
-          <div class="form-group">
-            <label class="control-label col-sm-3" for="category">Category</label>
-            <div class="col-sm-9">
-              <select class="form-control" name="cid" id="cid">
-                <% _.each(allCategory, function(category) { %>
-                <option value="<%= category.id %>"><%= category.name %></option>
-                <% }) %>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-3" for="name">Name</label>
-            <div class="col-sm-9">
-              <input type="text" class="sr-only" name="uid" value="<%= req.session.user.id %>">
-              <input type="text" class="sr-only" name="kind" value="video">
-              <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
-            </div>
-          </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="name">Title</label>
+                <div class="col-sm-9">
+                  <input type="text" class="sr-only" name="kind" value="article">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+                </div>
+              </div>
               <div class="form-group">
                 <label class="control-label col-sm-3" for="slug">Slug</label>
                 <div class="col-sm-9">
@@ -36,66 +25,57 @@
                 </div>
               </div>
 
-          <div class="form-group">
-            <label class="control-label col-sm-3" for="type">Type</label>
-            <div class="col-sm-9">
-              <select class="form-control" name="type" id="type">
-                <option value="1">&#xf16a; Youtube</option>
-                <!--<option value="2">&#xf0c1; URL</option>-->
-                <!--<option value="3">&#xf0c1; Drive</option>-->
-              </select>
-            </div>
-          </div>
 
-            <div class="form-group has-feedback">
-              <label class="control-label col-sm-3" name="label-source" for="source">Source</label>
-              <div class="col-sm-9">
-                <div class="input-group">
-                  <input type="text" class="form-control" name="source" id="source" placeholder="Enter source" required>
-                  <div class="input-group-addon">
-                    <i id="icon_search" class="fa fa-search"></i>
-                    <i id="icon_load" class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>
-                    <i id="icon_done" class="fa fa-check"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
               <div class="form-group">
-            <label class="control-label col-sm-3" for="featured">Featured</label>
-            <div class="col-sm-9">
-              <select class="form-control" name="featured" id="feature">
-                <option value="0">No</option>
-                <option value="1">Yes</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-3" for="status">Status</label>
-            <div class="col-sm-9">
-              <select class="form-control" name="status" id="status">
-                <option class="val1" value="1">Show</option>
-                <option class="val0" value="0">Hide</option>
-              </select>
-            </div>
-          </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="content">Content</label>
+                <label class="control-label col-sm-3" for="description">Description</label>
                 <div class="col-sm-9">
-                  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">Click here</button>
+                  <input class="sr-only" name="uid" value="<%= req.session.user.id %>">
+                  <textarea rows="5" style="width:100%" colclass="form-control" name="description" id="description" required></textarea>
                 </div>
               </div>
 
             </div>
             <div class="col-sm-6">
-              <img class="getThumbnail" src="">
-              <div class="well">Thời lượng <span class="badge pull-right getTime"></span></div>
-              <input type="text" class="sr-only" name="time" id="time">
-
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="category">Category</label>
+                <div class="col-sm-9">
+                  <select class="form-control" name="cid" id="cid">
+                    <% _.each(allCategory, function(category) { %>
+                    <option value="<%= category.id %>"><%= category.name %></option>
+                    <% }) %>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="tag">Add Tags</label>
+                <div class="col-sm-9">
+                  <input type="text" data-role="tagsinput" class="form-control" name="tag" id="tag"></input>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="featured">Featured</label>
+                <div class="col-sm-9">
+                  <select class="form-control" name="featured" id="feature">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="status">Status</label>
+                <div class="col-sm-9">
+                  <select class="form-control" name="status" id="status">
+                    <option class="val1" value="1">Show</option>
+                    <option class="val0" value="0">Hide</option>
+                  </select>
+                </div>
+              </div>
             </div>
             <div class="col-sm-12">
               <div class="form-group">
-
-                <div class="col-sm-12 collapse" id="demo">
+                <div class="col-sm-12">
                   <textarea class="form-control" name="content" id="add-content" value=""></textarea>
                 </div>
               </div>

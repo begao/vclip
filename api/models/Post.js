@@ -40,6 +40,9 @@ module.exports = {
       type: 'string',
       defaultsTo: '0'
     },
+    tag: {
+      type: 'array'
+    },
     featured: {
       type: 'integer'
     },

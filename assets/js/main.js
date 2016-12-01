@@ -155,6 +155,8 @@ $(function() {
     })
   });
 
+
+
   $('#edit-post-form').submit(function(e) {
     e.preventDefault();
     var data = $('#edit-post-form').serialize();
@@ -222,11 +224,14 @@ $(function() {
         return false;
       }
     });
+  });
 
+  $('#editPostModal').ready(function(){
+    var catchCID = $('span.catch-cid').text();
+    $('option[name=cid'+catchCID+']').attr('selected','selected')
   });
 
   $('#source').ready(function() {
-
     $('label[name=label-source]').css('color','#a94442');
     $('input#source').css({'color':'#a94442'});
     $('#icon_search').show();
@@ -239,7 +244,6 @@ $(function() {
     $('#icon_done').hide();
     $('#icon_load').show();
     if ($('#source').val().length == 11) {
-
       var labelSource = $('#source').val();
       socket.get('/youtube/search?id='+labelSource);
     }
@@ -257,13 +261,10 @@ $(function() {
     $('#icon_load').hide();
     $('label[name=label-source]').css('color','#3f8040');
     $('input#source').css({'color':'#3f8040'});
-    // $('#description').val(recieve.data.title);
     $('#time').val(duration);
-    // $('#year').val(recieve.data.year);
-    // $('#director').val(recieve.data.director);
-    // $('#cast').val(recieve.data.actors);
     $('span.getTime').text(duration);
     $('#thumbInput').val(recieve.getThumbUrl);
+    $('input[name=thumbnail]').val(recieve.getThumbUrl);
     $('.getThumbnail').attr('src',recieve.getThumbUrl);
   });
 

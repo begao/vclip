@@ -5,7 +5,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"><i class="fa fa-plus"></i> ADD NEW POST</h4>
+        <h4 class="modal-title"><i class="fa fa-plus"></i> ADD NEW ARTICLE</h4>
       </div>
       <div class="modal-body">
         <form class="form-horizontal" id="add-post-form">
@@ -26,6 +26,34 @@
               </div>
 
 
+
+
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="description">Description</label>
+                <div class="col-sm-9">
+                  <input class="sr-only" name="uid" value="<%= req.session.user.id %>">
+                  <textarea rows="5" style="width:100%" colclass="form-control" name="description" id="description" required></textarea>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="category">Category</label>
+                <div class="col-sm-9">
+                  <select class="form-control" name="cid" id="cid">
+                    <% _.each(allCategory, function(category) { %>
+                    <option value="<%= category.id %>"><%= category.name %></option>
+                    <% }) %>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="tag">Add Tags</label>
+                <div class="col-sm-9">
+                  <input type="text" data-role="tagsinput" class="form-control" name="tag" id="tag"></input>
+                </div>
+              </div>
               <div class="form-group">
                 <label class="control-label col-sm-3" for="featured">Featured</label>
                 <div class="col-sm-9">
@@ -41,27 +69,6 @@
                   <select class="form-control" name="status" id="status">
                     <option class="val1" value="1">Show</option>
                     <option class="val0" value="0">Hide</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="description">Description</label>
-                <div class="col-sm-9">
-                  <input class="sr-only" name="uid" value="">
-                  <textarea rows="5" style="width:100%" colclass="form-control" name="description" id="description" required></textarea>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label col-sm-3" for="category">Category</label>
-                <div class="col-sm-9">
-                  <select class="form-control" name="cid" id="cid">
-                    <% _.each(allCategory, function(category) { %>
-                    <option value="<%= category.id %>"><%= category.name %></option>
-                    <% }) %>
                   </select>
                 </div>
               </div>
@@ -90,7 +97,7 @@
                 <div class="col-sm-offset-2 col-sm-10">
                   <button onclick="goBack()" class="btn btn-default"><i class="fa fa-reply"></i> Go Back</button>
                   <button name="add-new" type="submit" class="btn btn-danger"><i class="fa fa-plus"></i> Add New</button>
-                  <span class="post-author pull-right">Post by : </span>
+                  <span class="post-author pull-right">Post by : <%= req.session.user.name %></span>
                 </div>
               </div>
             </div>

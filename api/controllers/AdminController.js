@@ -96,8 +96,12 @@ module.exports = {
 
   postid: (req,res) => {
     let params = req.allParams();
-    Post.findOne({id:params.id}).exec(function(err,result) {
-      res.view('template/admin/post/edit',result)
+    Files.find(function(err,allThumb) {
+      Category.find(function (err, allCategory) {
+        Post.findOne({id: params.id}).exec(function (err, result) {
+          res.view('template/admin/post/edit', {result,allThumb,allCategory})
+        })
+      })
     })
   },
 
@@ -164,7 +168,16 @@ module.exports = {
       }
       res.ok(result)
     })
-  }
+  },
+
+  article: (req,res) => {
+    Files.find(function(err,allThumb) {
+      if (err) return res.negotiate(err);
+      Category.find(function(err,allCategory) {
+        res.view('template/admin/post/article',{allCategory,allThumb})
+      })
+    });
+  },
 
 };
 

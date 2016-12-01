@@ -17,9 +17,14 @@ module.exports = {
 
   view: (req,res) => {
     let params = req.allParams();
+    var postLimit = 12;
+    if (params.page) var perPage = (params.page - 1) * postLimit;
+    else var perPage = 0;
     Category.find(function(err,allCategory) {
       Post.find({limit: 5,sort: 'createdAt DESC'}).exec(function (err, fivePost) {
-        Category.findOne({id: params.id}).populate('posts').exec(function (err, foundCategory) {
+        Category.findOne({id: params.id})
+          .populate('posts',{skip:perPage,limit:postLimit})
+          .exec(function (err, foundCategory) {
           if (err) {
             return res.negotiate(err)
           }

@@ -39,6 +39,7 @@ var jsFilesToInject = [
   // will be injected here in no particular order.
 
   'js/bootstrap.min.js',
+  'ckeditor/ckeditor.js',
   'js/main.js',
   'js/bootstrap-editable.min.js',
   'js/plugins/api.js',

@@ -186,9 +186,9 @@ $(function() {
   });
 
   var getLink = window.location.href.substr().split("/");
-  if ( getLink[3]+'/'+getLink[4] =="admin/newpost") {
+  if ( getLink[3]+'/'+getLink[4] == "admin/newpost" || getLink[3]+'/'+getLink[4] == "article/add") {
     CKEDITOR.replace('add-content');
-  } else if ( getLink[3]+'/'+getLink[4] =="admin/postid") {
+  } else if ( getLink[3]+'/'+getLink[4] =="admin/postid" || getLink[3]+'/'+getLink[4] == "article/edit") {
     CKEDITOR.replace('edit-content');
   }
 
@@ -226,7 +226,7 @@ $(function() {
   });
 
   $('#source').ready(function() {
-    $('button[name=add-new]').addClass('disabled');
+
     $('label[name=label-source]').css('color','#a94442');
     $('input#source').css({'color':'#a94442'});
     $('#icon_search').show();
@@ -239,7 +239,7 @@ $(function() {
     $('#icon_done').hide();
     $('#icon_load').show();
     if ($('#source').val().length == 11) {
-      $('button[name=add-new]').removeClass('disabled');
+
       var labelSource = $('#source').val();
       socket.get('/youtube/search?id='+labelSource);
     }
@@ -267,6 +267,28 @@ $(function() {
     $('.getThumbnail').attr('src',recieve.getThumbUrl);
   });
 
+  // phân trang - mỗi trang 12 phim
+  var eachPage = 12;
+  var soTrang = Math.floor((parseInt($('span.countPost').text())/eachPage)+1);
+  var checkActive = window.location.search.split('page=');
+  if (soTrang >= 5 && soTrang != 1) {
+    for (var p=1; p <= soTrang; p++) {
+      $('div.phantrang-home ul').append('<li class="page'+p+'"><a href="?page='+p+'>'+p+'</a></li>');
+      var checkAnd = checkActive[0].split('');
+      if (checkAnd[checkActive[0].length-1]=="&") $('div.phantrang-cat ul').append('<li class="page'+p+'"><a href="/category/view'+checkActive[0]+'page='+p+'">'+p+'</a></li>');
+      else $('div.phantrang-cat ul').append('<li class="page'+p+'"><a href="/category/view'+checkActive[0]+'&page='+p+'">'+p+'</a></li>');
+    }
+    $('div.panel-footer ul li.page'+checkActive[1]).addClass('active');
+  } else if (soTrang < 5 && soTrang != 1) {
+    for (var p=1; p <= soTrang; p++) {
+      $('div.phantrang-home ul').append('<li class="page'+p+'"><a href="?page='+p+'">'+p+'</a></li>');
+      var checkAnd = checkActive[0].split('');
+      if (checkAnd[checkActive[0].length-1]=="&") $('div.phantrang-cat ul').append('<li class="page'+p+'"><a href="/category/view'+checkActive[0]+'page='+p+'">'+p+'</a></li>');
+      else $('div.phantrang-cat ul').append('<li class="page'+p+'"><a href="/category/view'+checkActive[0]+'&page='+p+'">'+p+'</a></li>');
+    }
+    $('div.panel-footer ul li.page'+checkActive[1]).addClass('active');
+  }
+
 });
 
 // Image Upload with preview
@@ -293,11 +315,26 @@ function showMyImage(fileInput) {
 $(document).ready(function() {
   $('#manage_post').DataTable();
   $('#manage_category').DataTable();
-  if ($( window ).width() > 992) {
-  var newTitle = $('span.post-title').text().substring(0, 44)+'...';
-    $('span.post-title').text(newTitle);
-  }
+
+  // $('#panel-post .new-post').each(function() {
+  //   if ($( window ).width() > 992) {
+  //   var newTitle = $(this).find('span.post-title').text().substring(0, 48)+'...';
+  //     $(this).find('span.post-title').text(newTitle);
+  //   }
+  // });
+  $('#panel-article .new-post').each(function() {
+    if ($( window ).width() > 992) {
+      var newTitle = $(this).find('span.post-desc').text().substring(0, 148)+'...';
+      $(this).find('span.post-desc').text(newTitle);
+    }
+    if ($( window ).width() < 500) {
+      var newTitle = $(this).find('span.post-desc').text().substring(0, 140)+'...';
+      $(this).find('span.post-desc').text(newTitle);
+    }
+  })
 } );
+
+
 
 function chooseImg(e) {
   var thumbLink = $(e).find('img').attr('src');

@@ -24,7 +24,8 @@
           <div class="form-group">
             <label class="control-label col-sm-3" for="name">Name</label>
             <div class="col-sm-9">
-              <input class="sr-only" name="uid" value="<%= req.session.user.id %>">
+              <input type="text" class="sr-only" name="uid" value="<%= req.session.user.id %>">
+              <input type="text" class="sr-only" name="kind" value="video">
               <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
             </div>
           </div>

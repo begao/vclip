@@ -2,6 +2,7 @@
 body {
   background:#ececec !important;
   letter-spacing: 0.5px;
+  font-size:16px;
 }
 footer {
   margin-top:10px;
@@ -18,12 +19,38 @@ hr {
 /*------------------------- HOMEPAGE -----------------------------*/
 .more-info {
   width: 100%;
+  margin-top:5px;
   float:left;
   font-size:12px;
   overflow: hidden;
   color:#606060;
 }
 
+div#panel-article .new-post .thumb-div {
+  float:left;
+  width:30%;
+}
+
+div#panel-article .new-post .name-post {
+  float:left;
+  width:70%;
+  padding:0px 10px;
+  background:#fff;
+  font-size:16px;
+}
+div#panel-article .new-post .post-desc {
+  font-size:14px;
+  color:#6b6b6b;
+}
+div#panel-article .new-post .name-post .post-title, .post-title {
+  font-weight:bold;
+  width:100%;
+}
+
+div#panel-article .new-post {
+  padding:0 0 15px 0;
+  border-bottom:1px solid #f5f5f5;
+}
 /*------------------------ INPUT FORM CSS -------------------------*/
 
 #login-page, #register-page {
@@ -145,7 +172,7 @@ div#column-right {
   /*white-space: nowrap;*/
   /*overflow: hidden;*/
   /*text-overflow: ellipsis;*/
-  background:#f0f0f0;
+  background:#fafafa;
   color:#de5448;
   font-size:14px;
   padding:10px 4px;
@@ -273,7 +300,19 @@ table thead , .modal-header {
 }
 /*----------------------------------------------------------------------*/
 @media (max-width: 500px) {
-
+  div#panel-article .new-post .thumb-div, div#panel-article .new-post .name-post {
+    width:100%;
+    padding:0 0 15px 0;
+  }
+  #main-post, #list-post{
+    padding:0;
+  }
+  div#panel-article .new-post {
+    background:#fff;
+  }
+  div#panel-article .new-post .name-post {
+    padding:10px 0;
+  }
   .thumb-div {
     width:50%;
   }

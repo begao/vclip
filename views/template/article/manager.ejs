@@ -1,0 +1,62 @@
+<%- partial ('../common/admin_nav.ejs') %>
+
+<div class="container" id="page-article_manager">
+  <h2>POST LIST
+    <span class="pull-right">
+      <a href="/article/add" class="btn btn-success btn-sm">
+        <i class="fa fa-plus fa-lg"></i> New Article</a></span>
+  </h2>
+
+  <table class="table table-inverse table-hover table-responsive" id="manage_post">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Thumbanil</th>
+      <th>Title</th>
+      <th>Description</th>
+
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% _.each(allPost, function(post) { %>
+    <tr>
+      <td class="article_id"><%= post.id %></td>
+      <td class="article_thumb"><img src="<%= post.thumbnail %>"></td>
+      <td class="article_title"><%= post.title %></td>
+      <td class="article_description"><%= post.description %></td>
+
+      <td class="article_status"><%= post.status %></td>
+      <td class="article_submit col-md-3">
+        <a href="/article/edit/<%= post.id %>" class="btn btn-primary edit_article"><i class="fa fa-pencil-square-o"></i> Edit</a>
+        <a class="btn btn-danger del_article"><i class="fa fa-remove fa-sm"></i> Delete</a>
+      </td>
+    </tr>
+    <% }) %>
+    </tbody>
+  </table>
+</div>
+
+<!--// Modal Del Category-->
+<div class="modal fade" id="delPostModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">DELETE ARTICLE</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you ready to delete article with title : <span class="post_name"></span> ?</p>
+        <form class="form-horizontal" id="del-post-form">
+          <input type="text" class="sr-only" name="id" value="">
+          <div class="form-group">
+            <div class="col-sm-12 text-right">
+              <button type="submit" class="btn btn-danger"><i class="fa fa-remove fa-sm"></i> Delete</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,8 @@
   <%- partial ('common/navbar.ejs') %>
   <div class="container">
     <div id="main-post" class="col-sm-8">
+      <% if (result.kind=='article') { %>
+      <% } else { %>
       <div class="embed-responsive embed-responsive-16by9">
         <% if (result.type==1) { %>
         <iframe class="embed-responsive-item" src="//www.youtube.com/embed/<%= result.source %>"></iframe>
@@ -25,10 +27,15 @@
           </div>
         </div>
       </div>
-
+      <% } %>
       <!--//nội dung phim-->
       <div id="post-content" class="panel panel-default">
+        <% if (result.kind == 'article') { %>
+        <div class="panel-heading"><%= result.name %></div>
+        <div class="panel-body"><%= result.description %></div>
+        <% } else { %>
         <div class="panel-heading">NỘI DUNG</div>
+        <% } %>
         <div class="panel-body"><%= result.content.replace('&lt;', '<').replace('&gt;', '>') %></div>
 
         <div class="panel-footer">

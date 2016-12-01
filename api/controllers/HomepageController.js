@@ -9,7 +9,7 @@ module.exports = {
 
   index: (req,res) => {
     let presentDate = (new Date()).toString();
-    let postLimit = 32;
+    let postLimit = 12;
     let params = req.allParams();
 
     // Count all post
@@ -35,30 +35,40 @@ module.exports = {
     });
     // Select all Post - limit 32
     let findAllPost = new Promise((resolve, reject) => {
-      if (!params.page) {
-        Post.find({sort:'createdAt DESC'}).limit(postLimit).exec((err, allPost) => {
-          if (err) {
-            reject(err)
-          }
+        Post.find({kind:'video'},{sort:'createdAt DESC'}).limit(8).exec((err, allPost) => {
+          if (err) { reject(err) }
           resolve(allPost);
         })
-      } else {
-        Post.find({sort:'createdAt DESC'}).paginate({params,limit:postLimit}).exec((err, allPost) => {
+    });
+    let findAllArticle = new Promise((resolve, reject) => {
+      if (!params.page) {
+        Post.find({kind:'article'},{sort:'createdAt DESC'}).limit(postLimit)
+          .exec((err, allArticle) => {
           if (err) {
             reject(err)
           }
-          resolve(allPost);
+          resolve(allArticle);
+        })
+      } else {
+        Post.find({kind:'article'},{sort:'createdAt DESC'})
+          .paginate({page:params.page,limit:postLimit})
+          .exec((err, allArticle) => {
+          if (err) {
+            reject(err)
+          }
+          resolve(allArticle);
         })
       }
     });
     // Solve all using Async/Await
     (async () => {
-      var [featuredPost,allCategory,allPost] = await Promise.all([
+      var [featuredPost,allCategory,allPost,allArticle] = await Promise.all([
         findFeaturedPost,
         findAllCategory,
-        findAllPost
+        findAllPost,
+        findAllArticle
       ]);
-      return res.view("homepage", {featuredPost,allCategory,allPost})
+      return res.view("homepage", {featuredPost,allCategory,allPost,allArticle})
     })
     ()
   }

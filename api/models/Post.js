@@ -17,6 +17,9 @@ module.exports = {
     type: {
       type: 'string'
     },
+    kind: {
+      type: 'string'
+    },
     thumbnail: {
       type: 'string'
     },

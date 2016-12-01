@@ -73,9 +73,11 @@ module.exports = {
 
   search: (req,res) => {
     let params = req.allParams();
+    let postLimit = 12;
     Post.find({
-      slug:{'contains':params.keyword},sort:'createdAt DESC'
-    }).exec(function(err,searchPost) {
+      slug:{'contains':params.keyword},sort:'createdAt DESC'})
+      .paginate({page:params.page,limit:postLimit})
+      .exec(function(err,searchPost) {
       if (!searchPost) {
         res.negotiate('Không tìm thấy phim')
       } else {

@@ -1,247 +1,182 @@
 {
   "data": {
-    "file": [
-      {
-        "name": "1",
-        "link": "2",
-        "size": 3,
-        "createdAt": "2016-10-24T21:21:45.022Z",
-        "updatedAt": "2016-10-24T21:21:45.022Z",
-        "id": 1
-      }
-    ],
+    "file": [],
+    "article": [],
     "category": [
       {
-        "name": "Phim Hành Động",
-        "description": "phim hành động",
+        "name": "Đánh Giá Sản Phẩm",
+        "description": "danh-gia-san-pham",
         "colum": "1",
         "status": 1,
         "createdAt": "2016-10-21T02:56:45.013Z",
-        "updatedAt": "2016-10-23T15:33:15.069Z",
+        "updatedAt": "2016-11-30T21:28:03.066Z",
         "id": 1,
         "column": 1
       },
       {
-        "name": "Phim Viễn Tưởng",
-        "description": "phim viễn tưởng",
-        "colum": "1",
-        "status": 1,
-        "createdAt": "2016-10-21T02:57:01.551Z",
-        "updatedAt": "2016-10-23T15:33:42.605Z",
-        "id": 2,
-        "column": 1
-      },
-      {
-        "name": "Phim Chiếu Rạp",
-        "description": "phim chiếu rạp",
+        "name": "Hướng Dẫn",
+        "description": "huong-dan",
         "column": 1,
         "status": 1,
-        "createdAt": "2016-10-22T21:44:34.524Z",
-        "updatedAt": "2016-10-23T15:34:21.221Z",
-        "id": 8
+        "createdAt": "2016-11-26T17:09:30.126Z",
+        "updatedAt": "2016-11-30T21:27:23.445Z",
+        "id": 12
       },
       {
-        "name": "Phim Kinh Dị",
-        "description": "phim kinh dị",
+        "name": "Tin Tức",
+        "description": "tin-tuc",
         "column": 1,
         "status": 1,
-        "createdAt": "2016-10-23T15:34:44.510Z",
-        "updatedAt": "2016-10-23T15:34:44.510Z",
-        "id": 9
-      },
-      {
-        "name": "Phim Hoạt Hình",
-        "description": "phim hoạt hình",
-        "column": 1,
-        "status": 1,
-        "createdAt": "2016-10-24T22:47:32.676Z",
-        "updatedAt": "2016-10-24T22:47:32.676Z",
-        "id": 10
+        "createdAt": "2016-11-30T23:52:22.137Z",
+        "updatedAt": "2016-11-30T23:52:22.137Z",
+        "id": 15
       }
     ],
-    "files": [
-      {
-        "link": "/images/thumbnail/83314668-ebdc-494a-b105-46f436f522c5.PNG",
-        "name": "IMG_0085.PNG",
-        "size": 1032346,
-        "createdAt": "2016-10-24T22:10:09.345Z",
-        "updatedAt": "2016-10-24T22:10:09.345Z",
-        "id": 1
-      },
-      {
-        "link": "/images/thumbnail/c5aec715-3845-4408-aa29-f0e26ce4bc83.PNG",
-        "name": "IMG_0100.PNG",
-        "size": 1787660,
-        "createdAt": "2016-10-24T22:35:38.127Z",
-        "updatedAt": "2016-10-24T22:35:38.127Z",
-        "id": 2
-      },
-      {
-        "link": "/images/thumbnail/67df51b5-f91f-4df2-b0b6-2876fd53152a.jpg",
-        "name": "hotel-transylvania-2012-201508759.jpg",
-        "size": 95227,
-        "createdAt": "2016-10-24T22:49:14.540Z",
-        "updatedAt": "2016-10-24T22:49:14.540Z",
-        "id": 3
-      },
-      {
-        "link": "/images/thumbnail/5be22e18-5fad-40cf-887c-b3ec30bfd552.jpg",
-        "name": "STORKS__1_SHEET__VNESE.jpg",
-        "size": 191466,
-        "createdAt": "2016-10-25T03:01:26.646Z",
-        "updatedAt": "2016-10-25T03:01:26.646Z",
-        "id": 4
-      },
-      {
-        "link": "/images/thumbnail/1067a6e5-5dc4-44e6-b69f-35856f5fabd5.jpg",
-        "name": "harry-potter-and-the-half-blood-prince-harry-potter-va-hoang-tu-lai-v.jpg",
-        "size": 251481,
-        "createdAt": "2016-10-26T23:55:04.229Z",
-        "updatedAt": "2016-10-26T23:55:04.229Z",
-        "id": 5
-      },
-      {
-        "link": "/images/thumbnail/d2001dc6-57c0-4e97-8281-6db619b4fbd3.jpg",
-        "name": "Edge_of_Tomorrow_Poster.jpg",
-        "size": 63841,
-        "createdAt": "2016-10-27T02:24:56.951Z",
-        "updatedAt": "2016-10-27T02:24:56.951Z",
-        "id": 6
-      },
-      {
-        "link": "/images/thumbnail/5bcf4785-5c58-469d-95df-c038ab198132.jpeg",
-        "name": "SxAQMEykp8B52kZdh.jpeg",
-        "size": 44345,
-        "createdAt": "2016-10-27T17:07:29.232Z",
-        "updatedAt": "2016-10-27T17:07:29.232Z",
-        "id": 7
-      },
-      {
-        "link": "/images/thumbnail/e5bd5490-2f55-468a-bcfe-23a748844ae5.jpg",
-        "name": "Edge_of_Tomorrow_Poster.jpg",
-        "size": 63841,
-        "createdAt": "2016-10-27T18:58:32.178Z",
-        "updatedAt": "2016-10-27T18:58:32.178Z",
-        "id": 8
-      }
-    ],
+    "files": [],
     "post": [
       {
-        "cid": 10,
+        "cid": 12,
         "uid": 26,
-        "name": "Khách sạn huyền bí",
-        "description": "Full HD vietsub",
+        "name": "Cách active iPhone mới mua",
+        "slug": "cach-active-iphone-moi-mua",
         "type": "1",
-        "source": "Jr7FSMvmwBY",
-        "content": "<p><strong>Nội dung</strong> : chưa có nội dung cho phim này</p>\r\n",
+        "kind": "video",
+        "source": "faX2fNF0MSA",
         "featured": 0,
         "status": "1",
-        "thumbnail": "/images/thumbnail/67df51b5-f91f-4df2-b0b6-2876fd53152a.jpg",
-        "createdAt": "2016-10-24T22:49:17.830Z",
-        "updatedAt": "2016-10-27T18:15:43.988Z",
-        "id": 28,
-        "time": 91,
-        "year": 2012
+        "time": "7:40",
+        "content": "",
+        "thumbnail": "https://img.youtube.com/vi/faX2fNF0MSA/mqdefault.jpg",
+        "view": 0,
+        "rate": "0",
+        "createdAt": "2016-11-30T21:45:27.638Z",
+        "updatedAt": "2016-11-30T21:45:27.638Z",
+        "id": 44
       },
       {
-        "cid": 10,
+        "cid": 1,
         "uid": 26,
-        "name": "Tiểu Đội Cò Bay",
-        "description": "tiểu đội cò bay",
+        "name": "Đánh giá nhanh iPhone 7 và 7 Plus mới",
+        "slug": "danh-gia-nhanh-iphone-7-va-7-plus-moi",
         "type": "1",
-        "source": "_IdhVAsYirU",
-        "content": "<p>giới thiệu , chưa c&oacute; nh&eacute;</p>\r\n",
+        "kind": "video",
+        "source": "kg6C1IS9LZA",
+        "featured": 0,
+        "status": "1",
+        "time": "4:22",
+        "content": "",
+        "thumbnail": "https://img.youtube.com/vi/kg6C1IS9LZA/mqdefault.jpg",
+        "view": 0,
+        "rate": "0",
+        "createdAt": "2016-11-30T21:46:21.432Z",
+        "updatedAt": "2016-11-30T21:46:21.432Z",
+        "id": 45
+      },
+      {
+        "cid": 12,
+        "uid": 26,
+        "name": "10 bí mật ẩn giấu trên iOS 10",
+        "slug": "10-bi-mat-an-giau-tren-ios-10",
+        "type": "1",
+        "kind": "video",
+        "source": "PT1LC-uU4Yc",
+        "featured": 0,
+        "status": "1",
+        "time": "12:20",
+        "content": "",
+        "thumbnail": "https://img.youtube.com/vi/PT1LC-uU4Yc/mqdefault.jpg",
+        "view": 1,
+        "rate": "0",
+        "createdAt": "2016-11-30T21:47:09.648Z",
+        "updatedAt": "2016-11-30T21:47:25.777Z",
+        "id": 46
+      },
+      {
+        "cid": 12,
+        "uid": 26,
+        "name": "Hướng dẫn sử dụng iPhone cho người mới",
+        "slug": "huong-dan-su-dung-iphone-cho-nguoi-moi",
+        "type": "1",
+        "kind": "video",
+        "source": "wB5tK5qaLO0",
+        "featured": 0,
+        "status": "1",
+        "time": "6:16",
+        "content": "",
+        "thumbnail": "https://img.youtube.com/vi/wB5tK5qaLO0/mqdefault.jpg",
+        "view": 2,
+        "rate": "0",
+        "createdAt": "2016-11-30T21:50:00.549Z",
+        "updatedAt": "2016-11-30T22:38:22.709Z",
+        "id": 47
+      },
+      {
+        "uid": null,
+        "name": "Việt Nam: Mới mua 1 tuần, iPhone 7 đã bị phù pin nhưng rất may là chưa phát nổ",
+        "slug": "viet-nam-moi-mua-1-tuan-iphone-7-da-bi-phu-pin-nhung-rat-may-la-chua-phat-no",
+        "kind": "article",
+        "featured": 0,
+        "status": "1",
+        "description": "iPhone 7 được chính thức bán ra vào giữa tháng 9, nhưng từ đó đến nay đã có không ít vụ lùm xùm xung quanh chất lượng sản phẩm. Từ sự khác biệt giữa máy sử dụng chip Intel và Qualcomm, máy đột ngột phát nổ, phiên bản dung lượng bộ nhớ thấp cho tốc độ chậm hơn cho đến gần đây nhất là thảm họa tróc sơn như iPhone 6s… khiến người dùng không khỏi lo lắng.",
+        "cid": 1,
+        "content": "<p>Kh&ocirc;ng dừng lại ở đ&oacute;, mới đ&acirc;y, một người d&ugrave;ng Facebook tại Việt Nam đ&atilde; chia sẻ th&ecirc;m một vấn đề mới với chiếc&nbsp;smartphone&nbsp;n&agrave;y. Sau khi hạ c&aacute;nh m&aacute;y bay, anh n&agrave;y ph&aacute;t hiện ra rằng m&agrave;n h&igrave;nh của chiếc iPhone 7 đ&atilde; bị t&aacute;ch rời khỏi khung, để lại một kẽ hở lớn.</p>\r\n\r\n<p><a href=\"http://kenh14cdn.com/2016/photo-1-1480317075589.jpg\" target=\"_blank\"><img alt=\"Việt Nam: Mới mua 1 tuần, iPhone 7 đã bị phù pin nhưng rất may là chưa phát nổ trên máy bay - Ảnh 1.\" src=\"http://kenh14cdn.com/2016/photo-1-1480317075589.jpg\" /></a></p>\r\n\r\n<p><a href=\"http://kenh14cdn.com/2016/photo-1-1480317078812.jpg\" target=\"_blank\"><img alt=\"Việt Nam: Mới mua 1 tuần, iPhone 7 đã bị phù pin nhưng rất may là chưa phát nổ trên máy bay - Ảnh 2.\" src=\"http://kenh14cdn.com/2016/photo-1-1480317078812.jpg\" /></a></p>\r\n\r\n<p><a href=\"http://kenh14cdn.com/2016/photo-2-1480317078814.jpg\" target=\"_blank\"><img alt=\"Việt Nam: Mới mua 1 tuần, iPhone 7 đã bị phù pin nhưng rất may là chưa phát nổ trên máy bay - Ảnh 3.\" src=\"http://kenh14cdn.com/2016/photo-2-1480317078814.jpg\" /></a></p>\r\n\r\n<p>M&agrave;n h&igrave;nh của iPhone 7 bị t&aacute;ch rời khỏi khung.</p>\r\n\r\n<p>Theo những g&igrave; ch&uacute;ng t&ocirc;i suy đo&aacute;n, rất c&oacute; thể đ&acirc;y l&agrave; một vấn đề li&ecirc;n quan đến pin. Pin phồng l&agrave; một triệu chứng thường thấy khi n&oacute; bị chai qua thời gian sử dụng d&agrave;i. Nhưng do chiếc m&aacute;y n&agrave;y được chủ nh&acirc;n n&oacute;i rằng<em>&nbsp;&quot;mới mua trong Apple Store chỉ 1 tuần&quot;,&nbsp;</em>khả năng tr&ecirc;n l&agrave; rất thấp.</p>\r\n\r\n<p>Vấn đề n&agrave;y cũng c&oacute; thể xảy ra khi c&oacute; c&aacute;c t&aacute;c động ở b&ecirc;n ngo&agrave;i, v&iacute; dụ như va đập mạnh hay nhiệt độ b&ecirc;n ngo&agrave;i qu&aacute; cao. Nhưng do chủ nh&acirc;n chia sẻ rất &iacute;t th&ocirc;ng tin, ch&uacute;ng t&ocirc;i chưa r&otilde; chiếc iPhone n&agrave;y được anh bảo quản v&agrave; sử dụng như thế n&agrave;o. Mặc d&ugrave; vậy, qua h&igrave;nh ảnh cũng c&oacute; thể thấy h&igrave;nh thức của n&oacute; vẫn c&ograve;n rất mới v&agrave; chưa c&oacute; vết trầy xước hay m&oacute;p n&agrave;o.</p>\r\n\r\n<p><a href=\"http://kenh14cdn.com/2016/photo-3-1480317078816.jpg\" target=\"_blank\"><img alt=\"Việt Nam: Mới mua 1 tuần, iPhone 7 đã bị phù pin nhưng rất may là chưa phát nổ trên máy bay - Ảnh 4.\" src=\"http://kenh14cdn.com/2016/photo-3-1480317078816.jpg\" /></a></p>\r\n\r\n<p>Một chiếc iPhone 5c bị ph&ugrave; pin.</p>\r\n\r\n<p>Mặc d&ugrave; nguy&ecirc;n nh&acirc;n c&oacute; ra sao, khả năng cao l&agrave;&nbsp;Apple&nbsp;sẽ thay thế miễn ph&iacute; chiếc m&aacute;y n&agrave;y cho anh. Trong trường hợp m&aacute;y của bạn gặp t&igrave;nh trạng như tr&ecirc;n, cho d&ugrave; c&oacute; l&agrave; d&ograve;ng iPhone n&agrave;o, ch&uacute;ng t&ocirc;i khuyến c&aacute;o n&ecirc;n li&ecirc;n hệ c&aacute;c trung t&acirc;m bảo h&agrave;nh ủy quyền để tiến h&agrave;nh thay pin ngay lập tức. Kh&ocirc;ng chỉ l&agrave; vấn đề li&ecirc;n quan đến thẩm mỹ, m&agrave; pin ph&ugrave; c&ograve;n c&oacute; thể g&acirc;y hỏng h&oacute;c đến c&aacute;c linh kiện kh&aacute;c (v&iacute; dụ như sức &eacute;p qu&aacute; mạnh c&oacute; thể khiến m&agrave;n h&igrave;nh bị vỡ). Nhưng quan trọng nhất, đ&oacute; l&agrave; sự an to&agrave;n của người d&ugrave;ng bị ảnh hưởng khi vi&ecirc;n pin c&oacute; thể ph&aacute;t nổ bất kỳ l&uacute;c n&agrave;o. D&ugrave; sao cũng rất may l&agrave; trong trường hợp tr&ecirc;n, chiếc iPhone 7 n&agrave;y kh&ocirc;ng ph&aacute;t nổ tr&ecirc;n m&aacute;y bay.</p>\r\n",
+        "thumbnail": "http://kenh14cdn.com/zoom/280_175/2016/photo-1-1480317078812-267-0-667-640-crop-1480317110153.jpg",
+        "view": 22,
+        "rate": "0",
+        "createdAt": "2016-11-30T22:03:53.830Z",
+        "updatedAt": "2016-11-30T22:38:25.795Z",
+        "id": 48
+      },
+      {
+        "uid": null,
+        "name": "Trứng luộc thì chín, iPhone 7 đem luộc liệu có chín không?",
+        "slug": "trung-luoc-thi-chin-iphone-7-dem-luoc-lieu-co-chin-khong",
+        "featured": 0,
+        "kind": "article",
+        "status": "1",
+        "description": "Sau biết bao chờ đợi, cuối cùng tính năng chống nước cũng đã được trang bị trên bộ đôi iPhone 7 và iPhone 7 Plus. Với tính năng mới này, giờ đây người dùng có thể thoải mái sử dụng điện thoại dưới trời mưa hoặc vô tình đánh rơi xuống nước mà vẫn không lo máy bị hỏng hóc. Nhưng đó là trường hợp rơi xuống nước thường, còn cho vào nồi nước sôi thì sẽ ra sao? \"Thánh phá hoại\" TechRax lại một lần nữa xuất hiện và giải đáp thắc mắc này cho bạn.",
+        "cid": 1,
+        "content": "<h3>Ở b&agrave;i thử nghiệm đầu ti&ecirc;n, anh ta đ&atilde; ng&acirc;m iPhone 7 v&agrave;o trong nước s&ocirc;i khoảng 1 ph&uacute;t, chỉ sau v&agrave;i gi&acirc;y m&agrave;n h&igrave;nh điện thoại nhanh ch&oacute;ng chuyển sang m&agrave;u đen v&agrave; m&aacute;y ngưng hoạt động.</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/giphy-1479883962474.gif\" target=\"_blank\"><img alt=\"Trứng luộc thì chín, iPhone 7 đem luộc liệu có chín không? - Ảnh 2.\" src=\"http://kenh14cdn.com/2016/giphy-1479883962474.gif.png\" style=\"width:500px\" /></a></h3>\r\n\r\n<h3>Mở t&iacute; nhạc lấy tinh thần trước khi đem luộc n&agrave;o.</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/giphy-1-1479884234652.gif\"><img alt=\"Trứng luộc thì chín, iPhone 7 đem luộc liệu có chín không? - Ảnh 3.\" src=\"http://kenh14cdn.com/2016/giphy-1-1479884234652.gif.png\" style=\"width:500px\" /></a></h3>\r\n\r\n<h3>Nhạc vẫn c&ograve;n ph&aacute;t d&ugrave; đang trong nồi nước s&ocirc;i. Tuy nhi&ecirc;n v&agrave;i gi&acirc;y sau th&igrave; m&agrave;n h&igrave;nh bắt đầu đen dần, nhạc tắt hẳn v&agrave; m&aacute;y c&oacute; dấu hiệu &quot;ngủm củ tỏi&quot;.</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/giphy-2-1479884680530.gif\" target=\"_blank\"><img alt=\"Trứng luộc thì chín, iPhone 7 đem luộc liệu có chín không? - Ảnh 4.\" src=\"http://kenh14cdn.com/2016/giphy-2-1479884680530.gif.png\" style=\"width:500px\" /></a></h3>\r\n\r\n<h3>May qu&aacute;, sau khi nguội hẳn th&igrave; m&aacute;y lại hoạt động b&igrave;nh thường rồi!</h3>\r\n\r\n<h3>Qua đến thử nghiệm thứ hai, lần n&agrave;y TechRax muốn luộc ch&iacute;n iPhone 7 trong khoảng 5 ph&uacute;t để xem m&aacute;y sẽ ra sao.</h3>\r\n\r\n<h3>Sau 5 ph&uacute;t luộc ch&iacute;n v&agrave; 10 ph&uacute;t để nguội, si&ecirc;u quậy n&agrave;y quyết định khởi động iPhone l&ecirc;n xem. D&ograve;ng chữ cảnh b&aacute;o m&aacute;y vẫn đang c&ograve;n rất n&oacute;ng v&agrave; cần phải để nguội th&ecirc;m trước khi c&oacute; thể sử dụng đ&atilde; xuất hiện. Tuy nhi&ecirc;n ngay sau đ&oacute; m&aacute;y đ&atilde; c&oacute; thể d&ugrave;ng được ngay v&agrave; chẳng c&oacute; dấu hiệu hỏng h&oacute;c n&agrave;o xảy ra.</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/giphy-3-1479884983682.gif\" target=\"_blank\"><img alt=\"Trứng luộc thì chín, iPhone 7 đem luộc liệu có chín không? - Ảnh 5.\" src=\"http://kenh14cdn.com/2016/giphy-3-1479884983682.gif.png\" style=\"width:500px\" /></a></h3>\r\n\r\n<h3>D&ograve;ng th&ocirc;ng b&aacute;o iPhone đang qu&aacute; n&oacute;ng v&agrave; cần để nguội trước khi tiếp tục sử dụng.</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/giphy-4-1479885197486.gif\" target=\"_blank\"><img alt=\"Trứng luộc thì chín, iPhone 7 đem luộc liệu có chín không? - Ảnh 6.\" src=\"http://kenh14cdn.com/2016/giphy-4-1479885197486.gif.png\" style=\"width:500px\" /></a></h3>\r\n\r\n<h3>Vẫn d&ugrave;ng được ngon l&agrave;nh nh&eacute;!</h3>\r\n\r\n<h3>Sau hai b&agrave;i thử nghiệm n&agrave;y, ch&uacute;ng ta c&oacute; thể thấy khả năng chống nước của iPhone năm nay rất tốt, thậm ch&iacute; khi bị luộc trong nước s&ocirc;i cũng chẳng hề hấn g&igrave;.</h3>\r\n\r\n<h3>Ngo&agrave;i tr&ograve; luộc iPhone, TechRax c&ograve;n c&oacute; rất nhiều pha tra tấn si&ecirc;u phẩm n&agrave;y, cụ thể lần gần nhất l&agrave; đem nhuộm v&agrave;ng iPhone 7 v&agrave; kết quả l&agrave; &quot;ngỏm&quot; lu&ocirc;n cả m&agrave;n h&igrave;nh.</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/giphy-1-1479208437584-1479573492626-1479884627633.gif\" target=\"_blank\"><img src=\"http://kenh14cdn.com/2016/giphy-1-1479208437584-1479573492626-1479884627633.gif\" /></a></h3>\r\n\r\n<h3><strong><em>(Tổng hợp)</em></strong></h3>\r\n",
+        "thumbnail": "http://kenh14cdn.com/zoom/280_175/2016/giphy-1479883962474-0-28-270-459-crop-1479884458465.gif",
+        "view": 4,
+        "rate": "0",
+        "createdAt": "2016-11-30T23:15:10.751Z",
+        "updatedAt": "2016-11-30T23:40:43.591Z",
+        "id": 49
+      },
+      {
+        "kind": "article",
+        "name": "Thích iPhone 7 nhưng không có nhiều tiền, hãy đợi iPhone 7s \"giá rẻ\" vào năm sau",
+        "slug": "thich-iphone-7-nhung-khong-co-nhieu-tien-hay-doi-iphone-7s-gia-re-vao-nam-sau",
+        "featured": 0,
+        "status": "1",
+        "uid": null,
+        "description": "Theo rất nhiều những thông tin gần đây cho biết trong năm 2017 tới đây, Apple sẽ ra mắt một chiếc iPhone có màn hình 5,8 inch với nhiều thay đổi thực sự đáng chú ý về thiết kế như màn hình cong tràn cạnh hay thiết kế không viền màn hình. Bên cạnh đó là 2 mẫu iPhone dùng màn hình LCD có kích thước tương tự iPhone 7 và iPhone 7 Plus hiện tại.",
+        "cid": 15,
+        "content": "<p><a href=\"http://kenh14cdn.com/2016/iphoneconceptimage-1479979390437.jpg\"><img alt=\"Thích iPhone 7 nhưng không có nhiều tiền, hãy đợi iPhone 7s giá rẻ vào năm sau - Ảnh 1.\" src=\"http://kenh14cdn.com/thumb_w/650/2016/iphoneconceptimage-1479979390437.jpg\" /></a></p>\r\n\r\n<h3><em>iPhone 7s m&agrave;n h&igrave;nh LCD 4,7 inch sẽ trở th&agrave;nh phi&ecirc;n bản &quot;gi&aacute; rẻ&quot;.</em></h3>\r\n\r\n<h3>Chuy&ecirc;n gia nghi&ecirc;n cứu Apple, Ming-Chi Kuo cho biết&nbsp;mẫu iPhone 4,7 inch 2017 sẽ trở th&agrave;nh smartphone tầm trung, thậm ch&iacute; trung b&igrave;nh thấp của Apple. Cụ thể, &ocirc;ng cho biết Apple nhiều khả năng sẽ hạ gi&aacute; th&agrave;nh của iPhone 7s c&oacute; m&agrave;n h&igrave;nh LCD 4,7 inch, đồng thời thể hiện l&ograve;ng tin rằng 30-34% doanh số của iPhone mới b&aacute;n ra trong năm sau sẽ thuộc về thiết bị n&agrave;y.</h3>\r\n\r\n<h3>B&ecirc;n cạnh đ&oacute;, 2017 cũng l&agrave; năm Apple kỉ niệm 10 năm iPhone đầu ti&ecirc;n ra đời, ch&iacute;nh v&igrave; thế mẫu iPhone mới sẽ c&oacute; thiết kế ho&agrave;n to&agrave;n đột ph&aacute;. Cụ thể, Ming-Chi Kuo gọi đ&acirc;y l&agrave; iPhone 8, n&oacute; sẽ sử dụng m&agrave;n h&igrave;nh OLED c&ugrave;ng&nbsp;thiết kế kh&ocirc;ng viền, ẩn cảm biến Touch ID b&ecirc;n dưới m&agrave;n h&igrave;nh, n&uacute;t Home vật l&yacute; bị loại bỏ,...</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/iphone-oled-thumb3-1479979492870.jpg\" target=\"_blank\"><img alt=\"Thích iPhone 7 nhưng không có nhiều tiền, hãy đợi iPhone 7s giá rẻ vào năm sau - Ảnh 2.\" src=\"http://kenh14cdn.com/thumb_w/650/2016/iphone-oled-thumb3-1479979492870.jpg\" /></a></h3>\r\n\r\n<h3><em>iPhone 8 sẽ c&oacute; m&agrave;n h&igrave;nh OLED c&ugrave;ng thiết kế đột ph&aacute; v&agrave; nhiều t&iacute;nh năng hữu &iacute;ch.</em></h3>\r\n\r\n<h3>Ngo&agrave;i ra,&nbsp;Kuo cũng cho hay model m&agrave;n h&igrave;nh 5,5 inch iPhone 7S Plus sẽ c&oacute; tầm gi&aacute; nằm giữa iPhone 7S 4,7 inch v&agrave; mẫu iPhone 8 m&agrave;n h&igrave;nh OLED. Hiện tại, iPhone 7 Plus c&oacute; gi&aacute; cao hơn 120 USD so với iPhone 7.</h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/iphone-8-concept-1479979558181.jpg\" target=\"_blank\"><img alt=\"Thích iPhone 7 nhưng không có nhiều tiền, hãy đợi iPhone 7s giá rẻ vào năm sau - Ảnh 3.\" src=\"http://kenh14cdn.com/2016/iphone-8-concept-1479979558181.jpg\" /></a></h3>\r\n\r\n<h3>T&oacute;m lại, với những th&ocirc;ng tin kể tr&ecirc;n, Kuo tỏ ra kh&aacute; tự tin về doanh số của d&ograve;ng iPhone trong năm 2017 tới của Apple . &Ocirc;ng tin rằng doanh số của c&aacute;c model mới sẽ c&aacute;n mốc 90-110 triệu chiếc so với mức khoảng 75 triệu chiếc năm 2016. Ch&uacute;ng ta h&atilde;y c&ugrave;ng chờ xem.</h3>\r\n",
+        "thumbnail": "http://kenh14cdn.com/zoom/280_175/2016/iphone-1479978017808-0-15-433-707-crop-1479978028765.jpg",
+        "view": 0,
+        "rate": "0",
+        "createdAt": "2016-11-30T23:54:40.484Z",
+        "updatedAt": "2016-11-30T23:54:40.484Z",
+        "id": 50
+      },
+      {
+        "kind": "article",
+        "name": "Các trang công nghệ lớn nói gì về iPhone 7 và 7 Plus",
+        "slug": "cac-trang-cong-nghe-lon-noi-gi-ve-iphone-7-va-7-plus",
         "featured": 1,
-        "time": 90,
-        "year": 2017,
-        "cast": [
-          "khánh,cát,trần"
-        ],
         "status": "1",
-        "thumbnail": "/images/thumbnail/5be22e18-5fad-40cf-887c-b3ec30bfd552.jpg",
-        "createdAt": "2016-10-25T03:01:29.339Z",
-        "updatedAt": "2016-10-25T03:01:29.339Z",
-        "id": 30
-      },
-      {
-        "cid": 2,
-        "uid": 26,
-        "name": "Harry Potter & Hoàng Tử Lai",
-        "description": "hoàng tử lai",
-        "type": "1",
-        "source": "X2pDvt30J5U",
-        "content": "<p>chưa c</p>\r\n",
-        "time": 90,
-        "year": 2017,
-        "cast": [
-          "khánh,cát,trần"
-        ],
-        "featured": 0,
-        "status": "1",
-        "thumbnail": "/images/thumbnail/1067a6e5-5dc4-44e6-b69f-35856f5fabd5.jpg",
-        "createdAt": "2016-10-26T23:55:11.179Z",
-        "updatedAt": "2016-10-27T00:00:47.279Z",
-        "id": 33
-      },
-      {
-        "cid": 2,
-        "uid": 26,
-        "name": "Cuộc Chiến Luân Hồi",
-        "description": "Edge of Tomorrow",
-        "type": "1",
-        "source": "syDf6IPCxM4",
-        "content": "",
-        "time": 90,
-        "year": 2017,
-        "cast": [
-          "khánh,cát,trần"
-        ],
-        "featured": 0,
-        "status": "1",
-        "thumbnail": "/images/thumbnail/d2001dc6-57c0-4e97-8281-6db619b4fbd3.jpg",
-        "createdAt": "2016-10-27T02:24:58.464Z",
-        "updatedAt": "2016-10-27T02:24:58.464Z",
-        "id": 34
-      },
-      {
-        "cid": 1,
-        "uid": 26,
-        "name": "300 Chiến Binh",
-        "description": "300",
-        "type": "2",
-        "source": "https://redirector.googlevideo.com/videoplayback?requiressl=yes&id=36632bc213357201&itag=37&source=webdrive&ttl=transient&app=explorer&ip=125.212.241.142&ipbits=0&expire=1477550533&sparams=requiressl%2Cid%2Citag%2Csource%2Cttl%2Cip%2Cipbits%2Cexpire&signature=909F0FD15A419D38D944196BC5AC9BC3CDEBFC98.3D59BFA708B531E1696F7BA6F23C2738C2FEA7A2&key=ck2&mm=31&mn=sn-i3b7kne7&ms=au&mt=1477535991&mv=u&nh=IgpwcjA1LmhrZzAxKgkxMjcuMC4wLjE&pl=20",
-        "content": "<p><strong>300</strong> l&agrave; bộ phim lịch sử t&aacute;i hiện cuộc chiến <strong>Thermopylae</strong> nổi tiếng k&eacute;o d&agrave;i 3 ng&agrave;y trong lịch sử Hy Lạp khi Vua Leonidas c&ugrave;ng 300 tinh binh Sparta đ&atilde; quyết tử đ&aacute;nh trả đạo qu&acirc;n Ba Tư khổng lồ gần 1 triệu qu&acirc;n do Vua Xerxes chỉ huy nhằm th&ocirc;n t&iacute;nh đất nước Hy Lạp.</p>\r\n",
-        "time": 90,
-        "year": 2017,
-        "cast": [
-          "khánh,cát,trần"
-        ],
-        "featured": 0,
-        "status": "1",
-        "thumbnail": "/images/thumbnail/5bcf4785-5c58-469d-95df-c038ab198132.jpeg",
-        "createdAt": "2016-10-27T17:07:31.206Z",
-        "updatedAt": "2016-10-27T17:07:31.206Z",
-        "id": 35
-      },
-      {
-        "cid": 1,
-        "uid": 26,
-        "name": "sadsad",
-        "description": "dsada",
-        "type": "1",
-        "source": "dsadada",
-        "content": "",
-        "time": 90,
-        "year": 2017,
-        "cast": [
-          "khánh,cát,trần"
-        ],
-        "featured": 0,
-        "status": "1",
-        "thumbnail": "/images/thumbnail/e5bd5490-2f55-468a-bcfe-23a748844ae5.jpg",
-        "createdAt": "2016-10-27T18:58:35.834Z",
-        "updatedAt": "2016-10-27T18:58:35.834Z",
-        "id": 37
+        "uid": null,
+        "description": "Vài ngày trước khi iPhone mới chính thức bán ra, iPhone 7 và iPhone 7 Plus đã đồng loạt được nhiều trang công nghệ lớn thực hiện đánh giá. Hãy cùng điểm qua một số ý kiến từ những trang công nghệ hàng đầu thế giới.",
+        "cid": 15,
+        "content": "<h3><strong>1. The Verge: \"iPhone 7 và 7 Plus là những chiếc điện thoại xuất sắc nhưng chưa hoàn thiện\"</strong></h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/text1-1473775868348.png\" target=\"_blank\"><img alt=\"Các trang công nghệ lớn nói gì về iPhone 7 và 7 Plus? - Ảnh 1.\" src=\"http://kenh14cdn.com/thumb_w/650/2016/text1-1473775868348.png\" /></a></h3>\r\n\r\n<h3>Trong bài review về bộ đôi iPhone mới của Apple, The Verge khẳng định chúng là những chiếc smartphone thú vị, kiên định và mạnh mẽ nhất mà Apple từng ra mắt. iPhone mới cũng là một sự thể hiện đầy tự tin của Apple về tầm nhìn mà hãng này đã vạch ra trong suốt một khoảng thời gian dài. \"iOS 10 thật tuyệt vời, camera được cải thiện, hiệu năng đột phá. Và thời lượng pin dài hơn. Chúng thực sự là những mẫu smartphone xuất sắc,\" The Verge nhấn mạnh.</h3>\r\n\r\n<h3>Tuy nhiên, iPhone 7 và 7 Plus cũng có những điểm chưa hoàn thiện. Một số tính năng hấp dẫn nhất ra đời cùng cụm camera kép trên iPhone 7 Plus chưa khả dụng ở thời điểm máy bán ra (chúng sẽ được cập nhật trong một bản cập nhật phần mềm sắp tới). Sự thay đổi lớn của Apple trong ứng dụng iMessage và Siri của iOS 10 chưa mang lại những kết quả đột biến. Các ứng dụng cũng chưa được cập nhật để tận dụng các công nghệ mới như Taptic Engine hay màn hình với dải màu hiển thị rộng hơn.</h3>\r\n\r\n<h3>\"Khoảng thời gian sử dụng iPhone 7, tôi có cảm giác như mình đang có một bản thử nghiệm của chiếc iPhone năm tới (được đồn đoán sẽ có thay đổi lớn về ngoại hình) đang \"ngụy trang\" trong hình hài của iPhone 6. Tất cả những cú đánh cược lớn của Apple vào tương lai đều vô cùng thú vị nhưng ở thời điểm hiện tại sử dụng iPhone 7 chẳng khác gì một chiếc iPhone 6s với nút Home kì lạ hơn và đôi khi cần thêm một số cổng chuyển đổi vậy.\"</h3>\r\n\r\n<h3><strong>2. CNET: \"Tất cả những gì bạn cần ở một chiếc điện thoại, trừ jack cắm tai nghe\"</strong></h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/text2-1473775868351.png\" target=\"_blank\"><img alt=\"Các trang công nghệ lớn nói gì về iPhone 7 và 7 Plus? - Ảnh 2.\" src=\"http://kenh14cdn.com/thumb_w/650/2016/text2-1473775868351.png\" /></a></h3>\r\n\r\n<h3>\"Màn hình cong? Không có đâu. Sạc không dây? Chưa tới lúc. Bạn có cảm thấy chán khi iPhone mới trông chẳng khác gì chiếc máy năm ngoái? Nếu câu trả lời là có! Tôi hiểu cảm giác của bạn. iPhone 7 không phải \"một chiếc điện thoại mới từ trong ra ngoài\". Điều này làm bạn phiền lòng? Cũng có thể. Nhưng iPhone mới có tốt hơn không? Chắc chắn rồi. Trừ một điểm liên quan đến jack cắm tai nghe 3,5 mm\"</h3>\r\n\r\n<h3><strong>3. TIME: \"Chiếc iPhone tuyệt nhất của Apple. Nhưng chỉ vừa đủ\"</strong></h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/text3-1473775868352.png\" target=\"_blank\"><img alt=\"Các trang công nghệ lớn nói gì về iPhone 7 và 7 Plus? - Ảnh 3.\" src=\"http://kenh14cdn.com/thumb_w/650/2016/text3-1473775868352.png\" /></a></h3>\r\n\r\n<h3>\"Nếu đang dùng iPhone 6s, không có nhiều lý do để bạn nâng cấp lên phiên bản này, trừ khi bạn là một gã nghiện nhiếp ảnh hoặc cảm thấy cần một dung lượng pin lớn hơn. Phần lớn thay đổi hấp dẫn mà Apple chuẩn bị cho người dùng thực ra nằm ở iOS 10, bản cập nhật sẽ được chuyển tới cả những người dùng iPhone đời cũ. Nói chung, những nâng cấp \"khiêm tốn\" của Apple đã khiến iPhone 7 và 7 Plus trở thành những chiếc iPhone tuyệt nhất tới thời điểm hiện tại - nhưng chẳng thấm tháp là bao so với những thay đổi mà iPhone 6 đối với những dòng máy tiền nhiệm.</h3>\r\n\r\n<h3>iPhone 7 có thể là bằng chứng cho thấy ngày tháng mà một chiếc smartphone thực sự có thể làm sửng sốt cả thế giới đã đi qua. Sau tất cả, bạn có thể \"nhét\" càng nhiều tính năng vào một chiếc smartphone càng tốt cho đến khi mọi thứ đi vào ngưỡng thừa thãi, thiếu cần thiết. Đối thủ của Apple đang trình diễn nhiều tính năng hấp dẫn, như cảm biến mống mắt, màn hình cong hay hỗ trợ thực tế ảo. </h3>\r\n\r\n<h3>Tuy nhiên có lẽ điều Apple nhận ra là những gì người dùng cần nhất: thời lượng pin dài hơn, bền hơn và camera tuyệt vời. iPhone 7 và 7 Plus không đủ sức \"wow\" như những sản phẩm khác của hãng. Nhưng một lần nữa, có thể chúng cũng chẳng cần phải làm vậy. Không phải là một bản nâng cấp lớn, nhưng cũng đủ giúp smartphone của Apple đứng trên ngôi đầu thị trường hiện nay.\"</h3>\r\n\r\n<h3><strong>4. Engadget: \"Apple (gần như) đang chơi an toàn\"</strong></h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/text4-1473775868354.png\" target=\"_blank\"><img alt=\"Các trang công nghệ lớn nói gì về iPhone 7 và 7 Plus? - Ảnh 4.\" src=\"http://kenh14cdn.com/thumb_w/650/2016/text4-1473775868354.png\" /></a></h3>\r\n\r\n<h3>\"Dù bạn có thích nó hay không, Apple tin rằng vẫn còn chỗ để cải thiện thiết kế mà hãng này đã sử dụng trong suốt hai năm qua, vì thế \"táo khuyết\" tập trung vào điều này thay vì tạo ra một ngoại hình hoàn toàn mới. Điều này khiến người ta nghĩ đến triết lý sản phẩn mà Apple đang theo đuổi có khi là \"nếu nó không hỏng thì đừng sửa gì hết\". Tuy nhiên, nghĩ đi nghĩ lại thì điều này cũng không hoàn toàn đúng, Apple \"sửa\" khá nhiều thứ trên iPhone năm nay.</h3>\r\n\r\n<h3>Dải ăng ten của iPhone mới chạy xung quanh khu vực đường cong trên đỉnh và đuôi máy thay vì cắt ngang mặt lưng như trước. Camera 12 MP được làm lồi lên mềm mại hơn với phần nhôm bao xung quanh thay vì đơn thuần lồi lên khá thô như trước. Apple cuối cùng cũng nâng mức bộ nhớ trong tối thiểu lên 32 GB trong khi mang đến một lựa chọn thực sự hấp dẫn là mức bộ nhớ 256 GB.\"</h3>\r\n\r\n<h3><strong>5. Mashable: \"Số 7 tuyệt diệu\"</strong></h3>\r\n\r\n<h3><a href=\"http://kenh14cdn.com/2016/text5-1473775868356.png\" target=\"_blank\"><img alt=\"Các trang công nghệ lớn nói gì về iPhone 7 và 7 Plus? - Ảnh 5.\" src=\"http://kenh14cdn.com/thumb_w/650/2016/text5-1473775868356.png\" /></a></h3>\r\n\r\n<h3>\"Bộ đôi tôi đang đánh giá, iPhone 7 với màn hình 4,7 inch và iPhone 7 Plus với màn hình 5,5 inch là những chiếc điện thoại đẹp, cao cấp với khả năng vận hành tốt tương đương hoặc tốt hơn bất kì chiếc điện thoại nào tôi từng dùng trước đó trong nhiều tình huống khác nhau. Không gây sửng sốt thật sự cũng chẳng để lại sự khó chịu nào, iPhone 7 và 7 Plus là một điểm nối trong danh sách những thiết bị mang tiêu chuẩn của cả một ngành công nghiệp và ít nhất ở một góc nhìn nào đó chúng đang hướng về tương lai.\"</h3>\r\n",
+        "thumbnail": "http://kenh14cdn.com/zoom/280_175/2016/header-iphone7-unbox-1475832996346-31-0-456-680-crop-1475833010367.jpg",
+        "view": 3,
+        "rate": "0",
+        "createdAt": "2016-12-01T00:29:00.863Z",
+        "updatedAt": "2016-12-01T00:52:53.936Z",
+        "id": 51
       }
     ],
     "user": [
@@ -270,6 +205,54 @@
       },
       "size": {
         "type": "integer"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "article": {
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "longtext"
+      },
+      "content": {
+        "type": "longtext"
+      },
+      "thumbnail": {
+        "type": "string"
+      },
+      "view": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "rate": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "feature": {
+        "type": "integer",
+        "defaultsTo": 0
+      },
+      "status": {
+        "type": "integer",
+        "defaultsTo": 1
+      },
+      "tag": {
+        "type": "array"
+      },
+      "cid": {
+        "type": "array"
       },
       "id": {
         "type": "integer",
@@ -337,35 +320,34 @@
       "name": {
         "type": "string"
       },
-      "description": {
+      "slug": {
         "type": "string"
       },
       "type": {
+        "type": "string"
+      },
+      "kind": {
         "type": "string"
       },
       "thumbnail": {
         "type": "string"
       },
       "source": {
-        "type": "string"
+        "type": "longtext"
       },
       "content": {
-        "type": "string"
-      },
-      "cast": {
-        "type": "array"
+        "type": "longtext"
       },
       "time": {
-        "type": "integer"
-      },
-      "year": {
-        "type": "integer"
+        "type": "string"
       },
       "view": {
-        "type": "integer"
+        "type": "integer",
+        "defaultsTo": 0
       },
       "rate": {
-        "type": "integer"
+        "type": "string",
+        "defaultsTo": "0"
       },
       "featured": {
         "type": "integer"
@@ -444,16 +426,17 @@
       "id": 27
     },
     "category": {
-      "id": 10
+      "id": 15
     },
     "post": {
-      "id": 37
+      "id": 51
     },
     "file": {
       "id": 1
     },
     "files": {
       "id": 8
-    }
+    },
+    "article": {}
   }
 }

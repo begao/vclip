@@ -21,11 +21,10 @@
       <a href="/post/view?id=<%= latestpost.id %>&slug=<%= latestpost.slug %>">
         <div class="media featured-name">
           <div class="media-left">
-            <img width=120px src="<%= latestpost.thumbnail %>" class="media-object">
+            <img src="<%= latestpost.thumbnail %>" class="media-object">
           </div>
           <div class="media-body">
             <h5 class="media-heading"><%= latestpost.name %></h5>
-            <p><i class="fa fa-clock-o"></i> <%= latestpost.time %></p>
             <p><i class="fa fa-eye"></i> <%= latestpost.view %> views</p>
           </div>
         </div></a><hr>

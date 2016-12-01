@@ -10,6 +10,12 @@ footer {
   padding: 15px;
   color:#fff;
 }
+.media-left {
+  width:40%;
+}
+.media-left img {
+  width:100%;
+}
 a:hover {
   text-decoration: none !important;
 }
@@ -69,10 +75,10 @@ input[name=uploadFiles] {
   width:98%;
 }
 .form-control-feedback {
-  color:#de5448;
+  color:#a94442;
 }
 div#search-result-fail {
-  color:#de5448;
+  color:#a94442;
 }
 table input[type="checkbox"] {
   position: relative !important;
@@ -119,14 +125,14 @@ select[name=type] {
 }
 #navbar-cat .navbar-nav > .active > a {
   background-color: #2f2f2f !important;
-  border-bottom:4px solid #de5448;
-  color:#de5448;
+  border-bottom:4px solid #a94442;
+  color:#a94442;
   font-weight: 500;
   padding:13px;
 }
 
 #navbar-cat ul li:hover > a{
-  color: #de5448;
+  color: #a94442;
 }
 /*--------------------------- end navbar -------------------------------*/
 
@@ -143,7 +149,7 @@ div#column-right {
 .featured-name h5 {
   height:47px;
   overflow: hidden;
-  color:#de5448;
+  color:#a94442;
 }
 .featured-name p {
   color:#646464;
@@ -173,7 +179,7 @@ div#column-right {
   /*overflow: hidden;*/
   /*text-overflow: ellipsis;*/
   background:#fafafa;
-  color:#de5448;
+  color:#a94442;
   font-size:14px;
   padding:10px 4px;
 }
@@ -214,7 +220,7 @@ img.thumb-post,img.img-cat-post {
   margin-right:20px;
 }
 .post-info h3 {
-  color:#de5448;
+  color:#a94442;
 }
 span.desc-post {
   width: 100%;
@@ -252,17 +258,17 @@ table thead , .modal-header {
 }
 .panel-heading {
   color: #ffffff !important;
-  background-color: #de5448 !important;
+  background-color: #a94442 !important;
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 1.2px !important;
 }
 .pagination > li > a, .pagination > li > span {
-  color:#de5448;
+  color:#a94442;
 }
 .pagination > .active > a {
-  background-color: #de5448;
-  border-color: #de5448;
+  background-color: #a94442;
+  border-color: #a94442;
 }
 .fa-check:before {
   color:#3f8040;
@@ -285,7 +291,7 @@ table thead , .modal-header {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #de5448;
+  background: #a94442;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -349,7 +355,7 @@ table thead , .modal-header {
     padding-left:5px;
   }
   .new-post {
-    background: #f0f0f0;
+    background: #fafafa;
   }
 }
 

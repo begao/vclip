@@ -13,7 +13,7 @@
             <!--Thumbnail 300x444-->
             <div class="name-post">
               <span class="post-title"><%= post.name %></span>
-              <span class="more-info"><i class="fa fa-eye"></i> <%= post.view %> lượtxem</span>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= post.view %> đã xem</span>
             </div>
           </div>
         </a>
@@ -32,7 +32,7 @@
             <div class="name-post">
               <span class="post-title"><%= article.name %></span>
               <span class="post-desc"><%= article.description %></span>
-              <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> lượtxem</span>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> đã xem</span>
             </div>
           </div>
         </a><hr>
@@ -67,14 +67,11 @@
         <a href="/post/view?id=<%= featured.id %>&slug=<%= featured.slug %>">
           <div class="media featured-name">
             <div class="media-left">
-              <img src="<%= featured.thumbnail %>" class="media-object" style="width:80px">
+              <img src="<%= featured.thumbnail %>" class="media-object">
             </div>
             <div class="media-body">
               <h5 class="media-heading"><%= featured.name %></h5>
-              <p><%= featured.description %></p>
-              <p><i class="fa fa-clock-o"></i> <%= featured.time %></p>
-              <p><i class="fa fa-calendar"></i> <%= featured.year %></p>
-              <p><i class="fa fa-eye"></i> <%= featured.view %> views</p>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= featured.view %> đã xem</span>
             </div>
           </div></a>
         <% }) %>

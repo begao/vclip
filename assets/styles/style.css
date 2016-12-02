@@ -409,3 +409,8 @@ table thead , .modal-header {
   background: #fafafa;
   border-bottom: 1px solid #eeeeee;
 }
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1200px;
+  }
+}

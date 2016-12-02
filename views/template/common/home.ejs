@@ -8,6 +8,7 @@
         <a href="/post/view?id=<%= post.id %>&slug=<%= post.slug %>">
           <div class="col-md-3 col-xs-12 col-sm-12 new-post">
             <div class="thumb-div">
+              <img class="play-button" src="/images/play.png">
             <img class="thumb-post" src="<%= post.thumbnail %>">
             </div>
             <!--Thumbnail 300x444-->
@@ -26,6 +27,7 @@
         <a href="/post/view?id=<%= article.id %>&slug=<%= article.slug %>">
           <div class="col-md-12 col-xs-12 col-sm-12 new-post">
             <div class="thumb-div">
+
               <img class="img-thumbnail thumb-post" src="<%= article.thumbnail %>">
             </div>
             <!--Thumbnail 300x444-->
@@ -67,6 +69,9 @@
         <a href="/post/view?id=<%= featured.id %>&slug=<%= featured.slug %>">
           <div class="media featured-name">
             <div class="media-left">
+              <% if (featured.kind == 'video') { %>
+              <img class="play-button" src="/images/play.png">
+              <% } %>
               <img src="<%= featured.thumbnail %>" class="media-object">
             </div>
             <div class="media-body">

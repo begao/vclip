@@ -26,6 +26,14 @@ hr {
   color:#ccc;
   font-size:13px;
 }
+img.play-button {
+  position:absolute;
+  max-width:100%;
+}
+.media-left .play-button {
+  position:absolute;
+  max-width:35%;
+}
 /*------------------------- HOMEPAGE -----------------------------*/
 .more-info {
   width: 100%;
@@ -309,10 +317,14 @@ table thead , .modal-header {
   right: 0;
 }
 /*----------------------------------------------------------------------*/
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   div#panel-article .new-post .thumb-div, div#panel-article .new-post .name-post {
     width:100%;
     padding:0;
+  }
+  img.play-button {
+    position:absolute;
+    max-width:40%;
   }
   #main-post, #list-post{
     padding:0;
@@ -358,7 +370,21 @@ table thead , .modal-header {
     padding-left: 5px !important;
   }
 }
-
+@media (max-width: 768px) {
+  .thumb-div {
+    float:left;
+    width:40%;
+  }
+  .name-post {
+    float:left;
+    width:60%;
+    font-size:16px;
+  }
+  img.play-button {
+    position:absolute;
+    max-width:40%;
+  }
+}
 
 @media (max-width: 992px) {
 

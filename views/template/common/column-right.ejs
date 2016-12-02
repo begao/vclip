@@ -21,6 +21,9 @@
       <a href="/post/view?id=<%= latestpost.id %>&slug=<%= latestpost.slug %>">
         <div class="media featured-name">
           <div class="media-left">
+            <% if (latestpost.kind == 'video') { %>
+            <img class="play-button" src="/images/play.png">
+            <% } %>
             <img src="<%= latestpost.thumbnail %>" class="media-object">
           </div>
           <div class="media-body">

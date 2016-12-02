@@ -363,3 +363,8 @@ table thead , .modal-header {
   max-width:320px;
   margin-top:10px;
 }
+
+.article-desc {
+  background: #fafafa;
+  border-bottom: 1px solid #eeeeee;
+}

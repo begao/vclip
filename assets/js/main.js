@@ -49,9 +49,7 @@ $(function() {
         delete params['pk'];
         delete params['name'];
         delete params['value'];
-
         params[keyToUpdate] = updateText;
-
         return params;
       }, title: title, ajaxOptions: {
         type: 'put'
@@ -179,6 +177,8 @@ $(function() {
     a.preventDefault();
     var data = $('#add-post-form').serialize();
     socket.get('/admin/postadd?' + data);
+  });
+  socket.on('new/post',function(){
     location.reload();
   });
 

@@ -135,26 +135,13 @@ module.exports = {
       return res.badRequest('sai zồi')
     }
     let params = req.allParams();
-
-
-
-
-    // var gm = require('gm');
-    //
-    // gm('https://'+params.thumbnail)
-    //   .resize(300, 420)
-    //   .autoOrient()
-    //   .write('../../assets/images/thumbnail/', function (err,newimg) {
-    //     if (err) console.log(err);
-    //     console.log(newimg)
-    //   });
-
+    sails.sockets.join(req,params.slug);
     Post.create(params).exec(function(err,result) {
       if (err) {
         return res.negotiate(err)
       }
       console.log(result);
-      res.json(result)
+      sails.sockets.broadcast(params.slug,'new/post',{msg:'ok'});
     })
   },
 

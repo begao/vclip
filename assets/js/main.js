@@ -1,6 +1,6 @@
 
 $(function() {
-  var socket = io.sails.connect();
+  var socket = io.sails.connect('http://vnmagic.net:1512');
   socket.get('/socket');
 
   //USER MANAGEMENT
@@ -221,7 +221,7 @@ $(function() {
   // page onload
   $(document).ready(function() {
     $(window).keydown(function(event){
-      if(event.keyCode == 11) {
+      if(event.keyCode == 13) {
         event.preventDefault();
         return false;
       }

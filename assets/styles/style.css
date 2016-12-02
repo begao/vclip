@@ -414,3 +414,7 @@ table thead , .modal-header {
     max-width: 1200px;
   }
 }
+
+#register-page input {
+  color:#a94442;
+}

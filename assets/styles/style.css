@@ -308,7 +308,7 @@ table thead , .modal-header {
 @media (max-width: 500px) {
   div#panel-article .new-post .thumb-div, div#panel-article .new-post .name-post {
     width:100%;
-    padding:0 0 15px 0;
+    padding:0;
   }
   #main-post, #list-post{
     padding:0;

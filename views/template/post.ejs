@@ -36,9 +36,12 @@
         <% } else { %>
         <div class="panel-heading">NỘI DUNG</div>
         <% } %>
-        <div class="panel-body"><%= result.content.replace('&lt;', '<').replace('&gt;', '>') %></div>
+        <div class="panel-body"><%= result.content.replace('&lt;', '<').replace('&gt;', '>') %>
+
+        </div>
 
         <div class="panel-footer">
+
           <p><button class="btn btn-default" data-toggle="collapse" data-target="#fb-comment-content">View Comment</button></p>
           <div id="fb-root"></div>
           <div id="fb-comment-content" class="collapse">

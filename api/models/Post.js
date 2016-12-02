@@ -29,6 +29,9 @@ module.exports = {
     content: {
       type: 'longtext'
     },
+    description: {
+      type: 'longtext'
+    },
     time: {
       type: 'string'
     },

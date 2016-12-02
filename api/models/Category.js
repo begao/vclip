@@ -17,6 +17,9 @@ module.exports = {
     column: {
       type: 'integer'
     },
+    kind: {
+      type: 'string'
+    },
     status: {
       type: 'integer'
     },

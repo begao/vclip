@@ -4,11 +4,14 @@
   <div id="list-post" class="col-sm-8">
     <div class="panel panel-default">
       <div class="panel-heading"><i class="fa fa-film"></i> <%= foundCategory.name %></div>
+      <% if (foundCategory.kind == 'video') { %>
       <div class="panel-body">
         <% _.each(foundCategory.posts, function(post) { %>
         <a href="/post/view?id=<%= post.id %>&slug=<%= post.slug %>">
-          <div class="col-md-3 col-xs-3 col-sm-3 new-post">
-            <img class="thumb-post" src="<%= post.thumbnail %>">
+          <div class="col-md-3 col-xs-12 col-sm-6 new-post">
+            <div class="thumb-div">
+              <img class="thumb-post" src="<%= post.thumbnail %>">
+            </div>
             <!--Thumbnail 270x400-->
             <div class="name-post">
               <span class="post-title"><%= post.name %></span>
@@ -18,6 +21,25 @@
         </a>
         <% }) %>
       </div>
+      <% } else { %>
+      <div class="panel-body" id="panel-article">
+        <% _.each(foundCategory.posts, function(post) { %>
+        <a href="/post/view?id=<%= post.id %>&slug=<%= post.slug %>">
+          <div class="col-md-12 col-xs-12 col-sm-12 new-post">
+            <div class="thumb-div">
+              <img class="thumb-post" src="<%= post.thumbnail %>">
+            </div>
+            <!--Thumbnail 270x400-->
+            <div class="name-post">
+              <span class="post-title"><%= post.name %></span>
+              <span class="post-desc"><%= post.description %></span>
+              <span class="desc-post"><i class="fa fa-eye"></i> <%= post.view %> lượt xem</span>
+            </div>
+          </div>
+        </a>
+        <% }) %>
+      </div>
+      <% } %>
       <div class="phantrang-cat panel-footer text-center">
         <span class="sr-only countPost"><%=foundCategory.posts.length %></span>
         <ul class="pagination"></ul>

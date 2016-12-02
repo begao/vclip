@@ -305,7 +305,7 @@ table thead , .modal-header {
   right: 0;
 }
 /*----------------------------------------------------------------------*/
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   div#panel-article .new-post .thumb-div, div#panel-article .new-post .name-post {
     width:100%;
     padding:0;
@@ -316,11 +316,23 @@ table thead , .modal-header {
   div#panel-article .new-post {
     background:#fff;
   }
+  .panel-body {
+    padding:5px;
+  }
   div#panel-article .new-post .name-post {
     padding:10px 0;
   }
   .thumb-div {
-    width:50%;
+    float:left;
+    width:40%;
+  }
+  .new-post {
+    padding:0;
+  }
+  .name-post {
+    float:left;
+    width:60%;
+    font-size:14px;
   }
   .carousel-caption {
     display: none;
@@ -329,12 +341,11 @@ table thead , .modal-header {
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
-  .name-post {
-    font-size:12px;
-  }
+
   span.desc-post {
     font-size:10px;
   }
+
 }
 @media (max-width: 1024px) {
 
@@ -347,10 +358,10 @@ table thead , .modal-header {
 
 @media (max-width: 992px) {
 
-  .thumb-div,.name-post {
-    width:50%;
-    float:left;
-  }
+  /*.thumb-div,.name-post {*/
+    /*width:50%;*/
+    /*float:left;*/
+  /*}*/
   .name-post{
     padding-left:5px;
   }

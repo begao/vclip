@@ -13,6 +13,7 @@
       <th>ID</th>
       <th>Name</th>
       <th>Description</th>
+      <th>Kind</th>
       <th>Column</th>
       <th>Status</th>
       <th>Xử lý</th>
@@ -24,6 +25,7 @@
       <td class="cat_id"><%= category.id %></td>
       <td class="cat_name"><%= category.name %></td>
       <td class="cat_description"><%= category.description %></td>
+      <td class="cat_kind"><%= category.kind %></td>
       <td class="cat_column"><%= category.column %></td>
       <td class="cat_status"><%= category.status %></td>
       <td class="cat_submit">
@@ -55,6 +57,15 @@
             <label class="control-label col-sm-2" for="description">Description:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" name="description" id="description" placeholder="Enter description">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="kind">Kind:</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="kind" id="kind">
+                <option class="val1" value="video">Video</option>
+                <option class="val0" value="article">Article</option>
+              </select>
             </div>
           </div>
           <div class="form-group">
@@ -107,13 +118,22 @@
             </div>
           </div>
           <div class="form-group">
+            <label class="control-label col-sm-2" for="kind">Kind:</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="kind" id="kind">
+                <option class="val1" value="video">Video</option>
+                <option class="val0" value="article">Article</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
             <label class="control-label col-sm-2" for="column">Column:</label>
             <div class="col-sm-10">
               <input type="text" class="form-control" name="column" id="column" placeholder="Enter column">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label col-sm-2" for="description">Status:</label>
+            <label class="control-label col-sm-2" for="status">Status:</label>
             <div class="col-sm-10">
               <select class="form-control" name="status" id="status">
                 <option class="val1" value="1">Show</option>

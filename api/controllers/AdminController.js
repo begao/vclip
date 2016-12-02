@@ -51,6 +51,7 @@ module.exports = {
     Category.update({id:params.id},{
       name: params.name,
       description: params.description,
+      kind: params.kind,
       column: params.column,
       status: params.status
     }).exec(function(err,result) {

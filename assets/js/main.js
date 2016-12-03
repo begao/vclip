@@ -103,12 +103,13 @@ $(function() {
     console.log('gọi hàm submit');
     r.preventDefault();
     var checkStrName = $('#inputName').val().match('[!@#$%^&*()<>|+_~`/.]');
-    var checkStrEmail = $('#inputEmail').val().match('[@.]');
+    var checkStrEmail1 = $('#inputEmail').val().match('[@]');
+    var checkStrEmail2 = $('#inputEmail').val().match('[.]');
     if (checkStrName != null ) {
       $('#regModal p').text("Tên tài khoản không được chứa ký tự đặc biệt");
       $('#regModal').modal();
     }
-    else if (checkStrEmail == null || checkStrEmail.length < 2 ) {
+    else if (checkStrEmail1 == null || checkStrEmail2 == null ) {
       $('#regModal p').text("Dường như dữ liệu bạn nhập vào không phải là Email");
       $('#regModal').modal();
     }

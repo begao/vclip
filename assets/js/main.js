@@ -112,13 +112,14 @@ $(function() {
       $('#regModal p').text("Dường như dữ liệu bạn nhập vào không phải là Email");
       $('#regModal').modal();
     }
+    else if ($('#inputPassword').val().length < 8 ){
+      $('#regModal p').text("Mật khẩu phải có ít nhất 8 ký tự");
+      $('#regModal').modal();
+    }
     else if ($('#inputPassword').val() != $('#inputVerify').val()){
       $('#regModal p').text("Xác nhận mật khẩu không trùng khớp, vui lòng kiểm tra lại");
       $('#regModal').modal();
-    } else if ($('#inputPassword').val().length < 8 ){
-      $('#regModal p').text("Mật khẩu phải có ít nhất 8 ký tự");
-      $('#regModal').modal();
-    } else {
+    }  else {
 
     var data = $('#register').serialize();
     socket.get('/user/register?' + data);

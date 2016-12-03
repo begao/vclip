@@ -92,7 +92,7 @@ $(function() {
     console.log('gọi hàm submit');
     e.preventDefault();
     var checkStrEmail = $('#inputEmail').val().match('[!#$%^&*()<>|+~`/]');
-    if (checkStrName != null) {
+    if (checkStrEmail != null) {
       alert('troll nhau hả chế ')
     } else {
     var data = $('#login').serialize();

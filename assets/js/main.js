@@ -111,12 +111,14 @@ $(function() {
     } else if ($('#inputPassword').val().length < 8 ){
       $('#regModal p').text("Mật khẩu phải có ít nhất 8 ký tự");
       $('#regModal').modal();
-    }
+    } else {
     console.log('gọi hàm submit');
     r.preventDefault();
     var data = $('#register').serialize();
     socket.get('/user/register?' + data);
-  });
+    }
+    });
+
   socket.on('user/registered', function() {
     $('#regModal p').text("Đăng ký thành công, hãy đăng nhập");
     $('#regModal').modal();

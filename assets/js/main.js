@@ -103,7 +103,7 @@ $(function() {
     console.log('gọi hàm submit');
     r.preventDefault();
     var checkStrName = $('#inputName').val().match('[!@#$%^&*()<>|+_~`/.]');
-    var checkStrEmail = $('#inputName').val().match('[@.]');
+    var checkStrEmail = $('#inputEmail').val().match('[@.]');
     if (checkStrName != null ) {
       $('#regModal p').text("Tên tài khoản không được chứa ký tự đặc biệt");
       $('#regModal').modal();

@@ -3,6 +3,11 @@
   <h2>Đăng Ký</h2>
   <span class="help-block">Đăng ký để sử dụng đầy đủ chức năng của Website mà không bị giới hạn .</span>
   <form role="form" class="form-register" id="register">
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
+
+    <div id="status">
+    </div>
 
     <div class="form-group has-feedback">
       <label for="inputName" class="sr-only">Nhập Tên</label>

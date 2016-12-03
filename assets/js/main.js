@@ -91,8 +91,13 @@ $(function() {
   $('#login').submit(function (e) {
     console.log('gọi hàm submit');
     e.preventDefault();
+    var checkStrEmail = $('#inputEmail').val().match('[!#$%^&*()<>|+~`/]');
+    if (checkStrName != null) {
+      alert('troll nhau hả chế ')
+    } else {
     var data = $('#login').serialize();
     socket.get('/user/login?' + data);
+    }
   });
   // Khi client nhận thông báo login-success từ server sẽ chuyển user sang trang home
   socket.on('user/login-success', function() {
@@ -102,11 +107,16 @@ $(function() {
   $('#register').submit(function (r) {
     console.log('gọi hàm submit');
     r.preventDefault();
-    var checkStrName = $('#inputName').val().match('[!@#$%^&*()<>|+_~`/.]');
+    var checkStrName = $('#inputName').val().match('[!@#$%^&*()<>|+~`/.]');
+    var checkStrEmail = $('#inputEmail').val().match('[!#$%^&*()<>|+~`/]');
     var checkStrEmail1 = $('#inputEmail').val().match('[@]');
     var checkStrEmail2 = $('#inputEmail').val().match('[.]');
     if (checkStrName != null ) {
       $('#regModal p').text("Tên tài khoản không được chứa ký tự đặc biệt");
+      $('#regModal').modal();
+    }
+    if (checkStrEmail != null ) {
+      $('#regModal p').text("Bạn nhập cái méo gì ở đây vậy, nó đâu phải là Email, hay tính hack?");
       $('#regModal').modal();
     }
     else if (checkStrEmail1 == null || checkStrEmail2 == null ) {

@@ -23,7 +23,7 @@ hr {
    margin:10px 0;
 }
 .navbar-default .navbar-nav > li > a {
-  color:#ccc;
+  color:#757575;
   font-size:13px;
 }
 img.play-button {
@@ -73,8 +73,11 @@ div#panel-article .new-post {
 
 #login-page, #register-page {
   max-width:500px;
-  background:#fff;
   padding:20px;
+}
+#register-page .panel-heading, #register-page .btn,#login-page .panel-heading, #login-page .btn {
+  background:#333!important;
+  border-color:#333;
 }
 .input-group-addon:last-child {
   background:#f2f2f2;

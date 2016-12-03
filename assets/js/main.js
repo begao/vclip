@@ -100,8 +100,11 @@ $(function() {
   });
 
   $('#register').submit(function (r) {
+    console.log('gọi hàm submit');
+    r.preventDefault();
     var checkStrName = $('#inputName').val().match('[!@#$%^&*()<>|+_~`/]');
     if (checkStrName != null ) {
+
       $('#regModal p').text("Tên tài khoản không được chứa ký tự đặc biệt");
       $('#regModal').modal();
     }
@@ -112,8 +115,7 @@ $(function() {
       $('#regModal p').text("Mật khẩu phải có ít nhất 8 ký tự");
       $('#regModal').modal();
     } else {
-    console.log('gọi hàm submit');
-    r.preventDefault();
+
     var data = $('#register').serialize();
     socket.get('/user/register?' + data);
     }

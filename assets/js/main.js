@@ -102,10 +102,14 @@ $(function() {
   $('#register').submit(function (r) {
     console.log('gọi hàm submit');
     r.preventDefault();
-    var checkStrName = $('#inputName').val().match('[!@#$%^&*()<>|+_~`/]');
+    var checkStrName = $('#inputName').val().match('[!@#$%^&*()<>|+_~`/.]');
+    var checkStrEmail = $('#inputName').val().match('[@.]');
     if (checkStrName != null ) {
-
       $('#regModal p').text("Tên tài khoản không được chứa ký tự đặc biệt");
+      $('#regModal').modal();
+    }
+    else if (checkStrEmail == null || checkStrEmail.length < 2 ) {
+      $('#regModal p').text("Dường như dữ liệu bạn nhập vào không phải là Email");
       $('#regModal').modal();
     }
     else if ($('#inputPassword').val() != $('#inputVerify').val()){

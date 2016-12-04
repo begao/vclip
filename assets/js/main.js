@@ -1,6 +1,7 @@
 
 $(function() {
-  var socket = io.sails.connect('http://vnmagic.net:1512');
+  io.sails.url = "http://vnmagic.net:1512";
+  var socket = io.sails.connect();
   socket.get('/socket');
 
   //

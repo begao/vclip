@@ -29,7 +29,11 @@ module.exports = {
           Post.update({id:params.id},{view:updateView}).exec(function(err,done){
             //do something
           });
-          res.view('template/post',{result,allCategory,fivePost,title:result.name})
+          res.view('template/post',{result,allCategory,fivePost,
+            title:result.name,
+            metaImg:result.thumbnail,
+            metaUrl:req.url
+          })
         })
       })
     })

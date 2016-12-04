@@ -204,7 +204,6 @@ span.post-title {
 .fb-comments,#fb-comment-content {
   margin-bottom:20px;
   background: #fff;
-  padding:0 10px;
 }
 img.thumb-post,img.img-cat-post {
   width:100%;
@@ -288,6 +287,16 @@ table thead , .modal-header {
 .fa-check:before {
   color:#3f8040;
 }
+.fb-share-button.fb_iframe_widget {
+  margin: 10px 10px 0 10px;
+}
+
+div#fb-root {
+  padding: 15px;
+  background: #333;
+  font-size: 14px;
+  color: #fff;
+}
 /*--------------------------- end bootstrap -----------------------------*/
 
 .hvr-underline-from-center {
@@ -321,6 +330,15 @@ table thead , .modal-header {
 }
 /*----------------------------------------------------------------------*/
 @media (max-width: 500px) {
+  .panel {
+    margin-bottom:0;
+  }
+  .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin:0;
+  }
+  .container-fluid {
+    padding:0;
+  }
   div#panel-article .new-post .thumb-div, div#panel-article .new-post .name-post {
     width:100%;
     padding:0;
@@ -420,4 +438,30 @@ table thead , .modal-header {
 
 #register-page input {
   color:#a94442;
+}
+
+/*footer*/
+.ftitle {
+  color:#a94442;
+}
+.fdesc {
+  font-weight:200;
+  color:#ababab;
+}
+
+.f-copy {
+  margin-top:2px;
+  font-weight:100;
+  font-size:18px;
+}
+.r-foot {
+  text-align: right;
+}
+.r-foot img{
+  max-width:45px;
+  filter: grayscale(100%);
+  transition: all 0.6s;
+}
+.r-foot img:hover {
+  filter: grayscale(0%);
 }

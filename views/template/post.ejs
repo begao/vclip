@@ -1,4 +1,5 @@
 <div class="post-page">
+
   <%- partial ('common/navbar.ejs') %>
   <div class="container">
     <div id="main-post" class="col-sm-8">
@@ -29,22 +30,23 @@
       </div>
       <% } %>
       <!--//nội dung phim-->
+      <input class="sr-only" name="ogthumb" value="<%= result.thumbnail %>">
       <div id="post-content" class="panel panel-default">
         <% if (result.kind == 'article') { %>
         <div class="panel-heading"><%= result.name %></div>
         <div class="article-desc panel-body"><%= result.description %></div>
+
+        <div class="fb-share-button" data-href="http://vnmagic.net<%= req.url %>" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
         <% } else { %>
         <div class="panel-heading">NỘI DUNG</div>
         <% } %>
-        <div class="panel-body"><%= result.content.replace('&lt;', '<').replace('&gt;', '>') %>
-
+        <div class="panel-body">
+          <%= result.content.replace('&lt;', '<').replace('&gt;', '>') %>
         </div>
 
-        <div class="panel-footer">
 
-          <p><button class="btn btn-default" data-toggle="collapse" data-target="#fb-comment-content">View Comment</button></p>
-          <div id="fb-root"></div>
-          <div id="fb-comment-content" class="collapse">
+          <div id="fb-root">BÌNH LUẬN</div>
+          <div id="fb-comment-content">
             <div id="fb-comments" class="fb-comments" data-href="http://vnmagic.net<%= req.url %>" data-mobile="true" data-width="100%" data-numposts="10"></div>
           </div>
           <script>(function(d, s, id) {
@@ -55,7 +57,7 @@
               fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
         </div>
-      </div>
+
 
 
 

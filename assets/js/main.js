@@ -446,7 +446,7 @@ $(document).ready(function() {
   //   }
   // });
   $('#panel-post .new-post').each(function() {
-    if ($(window).width() < 1070) {
+    if ($(window).width() < 1070 && $(window).width() < 500) {
       var postTitle = $(this).find('span.post-title').text().substring(0, 26) + '...';
       $(this).find('span.post-title').text(postTitle);
     }

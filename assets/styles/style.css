@@ -247,6 +247,7 @@ span.desc-post {
 
 div#post-content img {
   max-width:100%;
+  height: auto !important;
 }
 
 .post_img img {

@@ -36,7 +36,11 @@
             <!--Thumbnail 270x400-->
             <div class="name-post">
               <span class="post-title"><%= post.name %></span>
+              <% if (post.kind == 'video') { %>
+              <span class="post-desc"><%= post.content %></span>
+              <% } else { %>
               <span class="post-desc"><%= post.description %></span>
+              <% } %>
               <span class="desc-post"><i class="fa fa-eye"></i> <%= post.view %> lượt xem</span>
             </div>
           </div>

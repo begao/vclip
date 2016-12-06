@@ -200,6 +200,8 @@ div#column-right {
 }
 span.post-title {
   float:left;
+  max-height: 40px;
+  overflow: hidden;
 }
 .fb-comments,#fb-comment-content {
   margin-bottom:20px;

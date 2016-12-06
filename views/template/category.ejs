@@ -37,7 +37,7 @@
             <div class="name-post">
               <span class="post-title"><%= post.name %></span>
               <% if (post.kind == 'video') { %>
-              <span class="post-desc"><%= post.content %></span>
+              <span class="post-desc"><%= post.content.replace(/&lt;|p|<|>|\//gi, '') %></span>
               <% } else { %>
               <span class="post-desc"><%= post.description %></span>
               <% } %>

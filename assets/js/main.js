@@ -445,7 +445,15 @@ $(document).ready(function() {
   //     $(this).find('span.post-title').text(newTitle);
   //   }
   // });
+  $('#panel-post .new-post').each(function() {
+    if ($(window).width() < 1070) {
+      var postTitle = $(this).find('span.post-title').text().substring(0, 26) + '...';
+      $(this).find('span.post-title').text(postTitle);
+    }
+  });
+
   $('#panel-article .new-post').each(function() {
+
     if ($( window ).width() > 992) {
       var newTitle = $(this).find('span.post-desc').text().substring(0, 148)+'...';
       $(this).find('span.post-desc').text(newTitle);

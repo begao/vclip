@@ -42,7 +42,9 @@ module.exports = {
     });
     let findAllArticle = new Promise((resolve, reject) => {
       if (!params.page) {
-        Post.find({kind:'article'},{sort:'createdAt DESC'}).limit(postLimit)
+        Post.find({kind:'article'},{sort:'createdAt DESC'})
+          .populate('category')
+          .limit(postLimit)
           .exec((err, allArticle) => {
           if (err) {
             reject(err)
@@ -51,6 +53,7 @@ module.exports = {
         })
       } else {
         Post.find({kind:'article'},{sort:'createdAt DESC'})
+          .populate('category')
           .paginate({page:params.page,limit:postLimit})
           .exec((err, allArticle) => {
           if (err) {

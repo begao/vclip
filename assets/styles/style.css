@@ -39,11 +39,13 @@ img.play-button {
   width: 100%;
   margin-top:5px;
   float:left;
-  font-size:12px;
+  font-size:14px;
   overflow: hidden;
   color:#606060;
 }
-
+span.cid-post {
+  margin-right:10px;
+}
 div#panel-article .new-post .thumb-div {
   float:left;
   width:30%;
@@ -202,6 +204,11 @@ span.post-title {
   float:left;
   max-height: 40px;
   overflow: hidden;
+}
+span.info-post {
+  width:100%;
+  float:left;
+  font-size:13px;
 }
 .fb-comments,#fb-comment-content {
   margin-bottom:20px;

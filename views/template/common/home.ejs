@@ -33,6 +33,10 @@
             <!--Thumbnail 300x444-->
             <div class="name-post">
               <span class="post-title"><%= article.name %></span>
+              <p class="more-info">
+                <span class="cid-post"><i class="fa fa-reorder"></i> <%= article.cid.name %></span>
+                <i class="fa fa-clock-o"></i> <time class="timeago" datetime="<%= article.createdAt %>"> <%= article.createdAt %></time>
+              </p>
               <span class="post-desc"><%= article.description %></span>
               <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> đã xem</span>
             </div>
@@ -63,7 +67,7 @@
         </form>
 
       </div>
-      <div class="panel-heading"><i class="fa fa-star-o"></i> NỔI BẬT</div>
+      <div class="panel-heading"><i class="fa fa-star-o"></i> NỔI BẬT NHẤT</div>
       <div class="panel-body">
         <% _.each(featuredPost, function(featured) { %>
         <a href="/post/view?id=<%= featured.id %>&slug=<%= featured.slug %>">
@@ -76,7 +80,7 @@
             </div>
             <div class="media-body">
               <h5 class="media-heading"><%= featured.name %></h5>
-              <span class="more-info"><i class="fa fa-eye"></i> <%= featured.view %> đã xem</span>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= featured.view %> lượt xem</span>
             </div>
           </div></a><hr>
         <% }) %>

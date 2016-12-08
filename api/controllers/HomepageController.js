@@ -53,7 +53,7 @@ module.exports = {
         })
       } else {
         Post.find({kind:'article'},{sort:'createdAt DESC'})
-          .populate('category')
+          .populate('cid')
           .paginate({page:params.page,limit:postLimit})
           .exec((err, allArticle) => {
           if (err) {

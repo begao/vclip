@@ -9,7 +9,7 @@ module.exports = {
 
   index: (req,res) => {
     let presentDate = (new Date()).toString();
-    let postLimit = 12;
+    let postLimit = 30;
     let params = req.allParams();
 
     // Count all post

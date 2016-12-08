@@ -48,12 +48,12 @@ span.cid-post {
 }
 div#panel-article .new-post .thumb-div {
   float:left;
-  width:30%;
+  width:35%;
 }
 
 div#panel-article .new-post .name-post {
   float:left;
-  width:70%;
+  width:65%;
   padding:0px 10px;
   background:#fff;
   font-size:16px;

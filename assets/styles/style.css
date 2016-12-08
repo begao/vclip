@@ -379,7 +379,7 @@ div#fb-root {
   .name-post {
     float:left;
     width:60%;
-    font-size:18px;
+    font-size: 18px !important;
   }
   .carousel-caption {
     display: none;

@@ -43,7 +43,7 @@ module.exports = {
     let findAllArticle = new Promise((resolve, reject) => {
       if (!params.page) {
         Post.find({kind:'article'},{sort:'createdAt DESC'})
-          .populate('category')
+          .populate('cid')
           .limit(postLimit)
           .exec((err, allArticle) => {
           if (err) {

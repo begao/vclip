@@ -369,6 +369,9 @@ div#fb-root {
   div#panel-article .new-post .name-post {
     padding:10px 0;
   }
+  span.post-title {
+    max-height:60px !important;
+  }
   .thumb-div {
     float:left;
     width:40%;

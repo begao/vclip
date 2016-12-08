@@ -379,7 +379,7 @@ div#fb-root {
   .name-post {
     float:left;
     width:60%;
-    font-size:14px;
+    font-size:18px;
   }
   .carousel-caption {
     display: none;
@@ -409,7 +409,7 @@ div#fb-root {
   .name-post {
     float:left;
     width:60%;
-    font-size:20px;
+    font-size:16px;
   }
   img.play-button {
     position:absolute;

@@ -35,7 +35,7 @@ module.exports = {
     });
     // Select all Post - limit 32
     let findAllPost = new Promise((resolve, reject) => {
-        Post.find({kind:'video'},{sort:'createdAt DESC'}).limit(8).exec((err, allPost) => {
+        Post.find({kind:'video'},{sort:'createdAt DESC'}).limit(5).exec((err, allPost) => {
           if (err) { reject(err) }
           resolve(allPost);
         })

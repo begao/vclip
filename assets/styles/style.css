@@ -39,19 +39,21 @@ img.play-button {
   width: 100%;
   margin-top:5px;
   float:left;
-  font-size:12px;
+  font-size:14px;
   overflow: hidden;
   color:#606060;
 }
-
+span.cid-post {
+  margin-right:10px;
+}
 div#panel-article .new-post .thumb-div {
   float:left;
-  width:30%;
+  width:35%;
 }
 
 div#panel-article .new-post .name-post {
   float:left;
-  width:70%;
+  width:65%;
   padding:0px 10px;
   background:#fff;
   font-size:16px;
@@ -200,6 +202,13 @@ div#column-right {
 }
 span.post-title {
   float:left;
+  max-height: 40px;
+  overflow: hidden;
+}
+span.info-post {
+  width:100%;
+  float:left;
+  font-size:13px;
 }
 .fb-comments,#fb-comment-content {
   margin-bottom:20px;
@@ -247,6 +256,7 @@ span.desc-post {
 
 div#post-content img {
   max-width:100%;
+  height: auto !important;
 }
 
 .post_img img {
@@ -359,6 +369,9 @@ div#fb-root {
   div#panel-article .new-post .name-post {
     padding:10px 0;
   }
+  span.post-title {
+    max-height:60px !important;
+  }
   .thumb-div {
     float:left;
     width:40%;
@@ -369,7 +382,7 @@ div#fb-root {
   .name-post {
     float:left;
     width:60%;
-    font-size:14px;
+    font-size: 18px !important;
   }
   .carousel-caption {
     display: none;

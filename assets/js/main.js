@@ -4,6 +4,9 @@ $(function() {
   var socket = io.sails.connect();
   socket.get('/socket');
 
+  $('#panel-article').ready(function(){
+    var getDate = $('time')
+  });
   //
   //  // This is called with the results from from FB.getLoginStatus().
   //  function statusChangeCallback(response) {
@@ -334,6 +337,7 @@ $(function() {
 
   // page onload
   $(document).ready(function() {
+    $("time.timeago").timeago();
     $(window).keydown(function(event){
       if(event.keyCode == 13) {
         event.preventDefault();
@@ -445,7 +449,19 @@ $(document).ready(function() {
   //     $(this).find('span.post-title').text(newTitle);
   //   }
   // });
+  // $('#panel-post .new-post').each(function() {
+  //   if ($(window).width() < 1070 && $(window).width() > 768) {
+  //     var postTitle = $(this).find('span.post-title').text().substring(0, 26) + '...';
+  //     $(this).find('span.post-title').text(postTitle);
+  //   }
+  // });
+
   $('#panel-article .new-post').each(function() {
+    var currentDate = $(this).find('time.timeago').text();
+    var postDate1 = new Date(currentDate);
+    var postDate = moment(postDate1).format('YYYY-MM-DD');
+    $(this).find('time.timeago').attr('datetime',postDate);
+
     if ($( window ).width() > 992) {
       var newTitle = $(this).find('span.post-desc').text().substring(0, 148)+'...';
       $(this).find('span.post-desc').text(newTitle);

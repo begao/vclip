@@ -9,7 +9,7 @@ module.exports = {
 
   index: (req,res) => {
     let presentDate = (new Date()).toString();
-    let postLimit = 12;
+    let postLimit = 30;
     let params = req.allParams();
 
     // Count all post
@@ -35,14 +35,16 @@ module.exports = {
     });
     // Select all Post - limit 32
     let findAllPost = new Promise((resolve, reject) => {
-        Post.find({kind:'video'},{sort:'createdAt DESC'}).limit(8).exec((err, allPost) => {
+        Post.find({kind:'video'},{sort:'createdAt DESC'}).limit(5).exec((err, allPost) => {
           if (err) { reject(err) }
           resolve(allPost);
         })
     });
     let findAllArticle = new Promise((resolve, reject) => {
       if (!params.page) {
-        Post.find({kind:'article'},{sort:'createdAt DESC'}).limit(postLimit)
+        Post.find({kind:'article'},{sort:'createdAt DESC'})
+          .populate('cid')
+          .limit(postLimit)
           .exec((err, allArticle) => {
           if (err) {
             reject(err)
@@ -51,6 +53,7 @@ module.exports = {
         })
       } else {
         Post.find({kind:'article'},{sort:'createdAt DESC'})
+          .populate('cid')
           .paginate({page:params.page,limit:postLimit})
           .exec((err, allArticle) => {
           if (err) {

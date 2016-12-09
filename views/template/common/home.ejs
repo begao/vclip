@@ -1,25 +1,6 @@
 
 <div class="container-fluid">
   <div id="list-post" class="col-sm-8">
-    <div class="panel panel-default" id="panel-post">
-      <div class="panel-heading"><i class="fa fa-film"></i> VIDEO MỚI NHẤT</div>
-      <div class="panel-body">
-        <% _.each(allPost, function(post) { %>
-        <a href="/post/view?id=<%= post.id %>&slug=<%= post.slug %>">
-          <div class="col-md-3 col-xs-12 col-sm-12 new-post">
-            <div class="thumb-div">
-              <img class="play-button" src="/images/play.png">
-            <img class="thumb-post" src="<%= post.thumbnail %>">
-            </div>
-            <!--Thumbnail 300x444-->
-            <div class="name-post">
-              <span class="post-title"><%= post.name %></span>
-              <span class="more-info"><i class="fa fa-eye"></i> <%= post.view %> đã xem</span>
-            </div>
-          </div>
-        </a>
-        <% }) %>
-      </div></div>
     <div class="panel panel-default" id="panel-article">
       <div class="panel-heading"><i class="fa fa-file-text-o"></i> BÀI VIẾT MỚI</div>
       <div class="panel-body">
@@ -33,8 +14,12 @@
             <!--Thumbnail 300x444-->
             <div class="name-post">
               <span class="post-title"><%= article.name %></span>
+              <p class="more-info">
+                <span class="cid-post"><i class="fa fa-reorder"></i> <%= article.cid.name %></span>
+                <i class="fa fa-clock-o"></i> <time class="timeago" datetime="<%= article.createdAt %>"> <%= article.createdAt %></time>
+              </p>
               <span class="post-desc"><%= article.description %></span>
-              <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> đã xem</span>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> lượt xem</span>
             </div>
           </div>
         </a><hr>
@@ -63,7 +48,7 @@
         </form>
 
       </div>
-      <div class="panel-heading"><i class="fa fa-star-o"></i> NỔI BẬT</div>
+      <div class="panel-heading"><i class="fa fa-star-o"></i> NỔI BẬT NHẤT</div>
       <div class="panel-body">
         <% _.each(featuredPost, function(featured) { %>
         <a href="/post/view?id=<%= featured.id %>&slug=<%= featured.slug %>">
@@ -76,7 +61,25 @@
             </div>
             <div class="media-body">
               <h5 class="media-heading"><%= featured.name %></h5>
-              <span class="more-info"><i class="fa fa-eye"></i> <%= featured.view %> đã xem</span>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= featured.view %> lượt xem</span>
+            </div>
+          </div></a><hr>
+        <% }) %>
+      </div>
+      <div class="panel-heading"><i class="fa fa-star-o"></i> VIDEO MỚI NHẤT</div>
+      <div class="panel-body">
+        <% _.each(allPost, function(post) { %>
+        <a href="/post/view?id=<%= post.id %>&slug=<%= post.slug %>">
+          <div class="media featured-name">
+            <div class="media-left">
+
+              <img class="play-button" src="/images/play.png">
+
+              <img src="<%= post.thumbnail %>" class="media-object">
+            </div>
+            <div class="media-body">
+              <h5 class="media-heading"><%= post.name %></h5>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= post.view %> lượt xem</span>
             </div>
           </div></a><hr>
         <% }) %>

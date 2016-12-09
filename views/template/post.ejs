@@ -14,20 +14,7 @@
         <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/<%= result.source %>/preview"></iframe>
         <% } %>
       </div>
-      <div class="row post-info">
-        <div class="media">
-          <div class="media-left">
-            <img src="<%= result.thumbnail %>" class="media-object">
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading"><%= result.name %></h4>
-            <p>
-              <span class="time-post"><i class="fa fa-clock-o"></i> <%= result.time %> phút</span>
-              <span class="view-post"><i class="fa fa-eye"></i> <%= result.view %> views </span>
-            </p>
-          </div>
-        </div>
-      </div>
+
       <% } %>
       <!--//nội dung phim-->
       <input class="sr-only" name="ogthumb" value="<%= result.thumbnail %>">
@@ -38,7 +25,9 @@
 
         <div class="fb-share-button" data-href="http://vnmagic.net<%= req.url %>" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
         <% } else { %>
-        <div class="panel-heading">NỘI DUNG</div>
+        <div class="panel-heading"><%= result.name %>
+            <span class="pull-right view-post"><i class="fa fa-eye"></i> <%= result.view %> views</span>
+        </div>
         <% } %>
         <div class="panel-body">
           <%= result.content.replace('&lt;', '<').replace('&gt;', '>') %>

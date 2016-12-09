@@ -29,14 +29,18 @@
           <div class="col-md-12 col-xs-12 col-sm-12 new-post">
             <div class="thumb-div">
               <% if (post.kind == 'video') { %>
-              <img class="play-button" src="/images/play.png">
+              <img style="max-width:30%;" class="play-button" src="/images/play.png">
               <% } %>
               <img class="thumb-post" src="<%= post.thumbnail %>">
             </div>
             <!--Thumbnail 270x400-->
             <div class="name-post">
               <span class="post-title"><%= post.name %></span>
+              <% if (post.kind == 'video') { %>
+              <span class="post-desc"><%= post.content.replace(/&lt;|p|<|>|\//gi, '') %></span>
+              <% } else { %>
               <span class="post-desc"><%= post.description %></span>
+              <% } %>
               <span class="desc-post"><i class="fa fa-eye"></i> <%= post.view %> lượt xem</span>
             </div>
           </div>

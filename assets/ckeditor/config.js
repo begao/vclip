@@ -24,8 +24,7 @@ CKEDITOR.editorConfig = function( config ) {
     { name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
     { name: 'styles' },
     { name: 'colors' },
-    { name: 'about' },
-    { name: 'insert', items: ['Image', 'Youtube']}
+    { name: 'about' }
   ];
 
   config.youtube_width = '640';

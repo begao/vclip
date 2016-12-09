@@ -19,7 +19,10 @@
                 <i class="fa fa-clock-o"></i> <time class="timeago" datetime="<%= article.createdAt %>"> <%= article.createdAt %></time>
               </p>
               <span class="post-desc"><%= article.description %></span>
-              <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> lượt xem</span>
+              <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> lượt xem
+              || <div class="fb-comments-count" data-href="http://vnmagic.net/post/view?id=<%= article.id %>&slug=<%= article.slug %>">0</div>
+
+              </span>
             </div>
           </div>
         </a><hr>

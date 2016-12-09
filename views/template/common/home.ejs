@@ -20,19 +20,12 @@
               </p>
               <span class="post-desc"><%= article.description %></span>
               <span class="more-info"><i class="fa fa-eye"></i> <%= article.view %> lượt xem</span>
-              <div class="fb-comments-count" data-href='http://vnmagic.net/post/view?id=<%= article.id %>&slug=<%= article.slug %>'>0</div>bình luận
+              <!--<div class="fb-comments-count" data-href='http://vnmagic.net/post/view?id=<%= article.id %>&slug=<%= article.slug %>'>0</div>bình luận-->
 
             </div>
           </div>
         </a><hr>
         <% }) %>
-        <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=343633113334";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
       </div>
       <div class="phantrang-home panel-footer text-center">
         <span class="sr-only countPost"><%= allPost.length %></span>
